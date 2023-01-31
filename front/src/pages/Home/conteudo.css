@@ -1,0 +1,84 @@
+*{
+    margin:0;
+    padding:0; 
+}
+
+.tema{
+text-align: center;
+font-size: 2.1vw;
+color: rgb(255, 94, 0);
+font-weight: bold;
+
+}
+.divMae{
+    margin: 8vw;
+    padding: 1vw;
+    background-color: azure;
+}
+.iconeSite{
+    width: 12vw;
+    height: 15vw;
+}
+.blocoEsquerdoPrincipall{
+    margin: auto;
+    display: table-caption;
+}
+.blocoDireitoPrincipal{
+    display: table;
+    margin-top: -10vw;
+    margin-left: 17vw;
+}
+.link{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0.90rem;
+    color: blue;
+
+  }
+  .card{
+    width: 14vw;
+    height: 2vw;
+  }
+  .perguntaIntrodutoria{
+      text-align: center;
+  }
+  .comentario{ 
+    max-width: 690vw; 
+    border-radius: 6px;
+    font-size: 1.10vw;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    background-color: white;
+  }
+
+
+   
+  .bloco2{
+      margin:4vw;
+      padding: 1vw;
+  }
+
+  .perguntaIntrodutoria{
+    color: rgb(255, 94, 0);
+    font-weight: bold;
+  }
+  .introducao{
+    text-align: center; 
+    background-color: aqua;
+    width: 15vw;
+    height: 5vw;
+    margin: 3vw;
+  }
+  .intro2{
+    text-align: center; 
+    background-color: rgb(241, 97, 1);
+    width: 15vw;
+    height: 5vw;
+  }
+  .intro3{
+    text-align: center; 
+    background-color: rgb(199, 4, 238);
+    width: 20vw;
+    height: 10vw;
+  }
