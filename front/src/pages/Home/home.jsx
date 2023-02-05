@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Menu from './menu';
+import Menu from '../navBar/menu';
 import Conteudo from './conteudo';
 
 
