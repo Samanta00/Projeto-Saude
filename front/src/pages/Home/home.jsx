@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
-import Menu from '../navBar/menu';
+import React from 'react';
 import Conteudo from './conteudo';
 
+// Navegação
+import Navbar from '../../component/NavBar';
+import ModalOptions from '../../component/NavBar/ModalOptions'
 
 
 
 function PagesHome(props) {
   return (
     <>
-      <Menu />
+      <Navbar />
+      <ModalOptions />
       <Conteudo/>
     </>
 

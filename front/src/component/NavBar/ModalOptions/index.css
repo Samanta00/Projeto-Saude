@@ -1,0 +1,88 @@
+.UserContainer {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.UserImg {
+  width: 38px;
+  height: 38px;
+  margin-left: 15px;
+  border-radius: 3vw;
+}
+
+.UserName {
+  color: white;
+}
+
+.arrow {
+  z-index: 1;
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  width: 0; 
+  height: 0; 
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid rgb(154, 181,240);
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 160px;
+  height: 200px;
+  background-color: rgb(154, 181,240);
+  position: absolute;
+  top: 5em;
+  right: 16px;
+  z-index: 1;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.modal ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ------------- sliding menu ------------------ */
+
+.hidden-arrow {
+  border-bottom: 0px solid;
+}
+
+.visible-arrow {
+  border-bottom: 25px solid rgb(154, 181,240);
+}
+
+.hidden-modal {
+  height: 0;
+}
+
+.hidden-modal ul {
+  display: none;
+}
+
+.visible-modal ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+
+.visible-modal ul li {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  padding-bottom: 1em;
+}
