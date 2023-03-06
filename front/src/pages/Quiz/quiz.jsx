@@ -1,5 +1,11 @@
 import React from 'react';
-import Menu from '../navBar/menu';
+import Conteudo from './conteudo';
+
+import './quiz.css'
+
+import Navbar from '../../component/NavBar';
+import ModalOptions from '../../component/NavBar/ModalOptions';
+
 
 
 
@@ -7,8 +13,9 @@ import Menu from '../navBar/menu';
 function Quiz() {
   return (
     <>
-      <Menu />
-      <h1>Hello</h1>
+      <Navbar/>
+      <ModalOptions/>
+      <Conteudo/>
     </>
 
   )

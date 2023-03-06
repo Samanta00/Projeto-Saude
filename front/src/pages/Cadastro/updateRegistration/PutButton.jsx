@@ -45,7 +45,7 @@ const Button = () => {
         }
 
     function Voltar() {
-            return navigate(`/form`)
+            return navigate(`/`)
         }
         return (
             <>
