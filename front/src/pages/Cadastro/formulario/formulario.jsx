@@ -1,7 +1,12 @@
 import React from "react";
+import ButtonCadastro from "../postCadastro/postButton";
+import { BotaoVoltar } from "../updateRegistration/buttonBack";
+import '../css/cadastro.css'
 
 const Formulario=()=>{
     return(
+        <div className="classeMae">
+            <h2 id="titulo-form">Novo Usuário</h2>
         <form id="form-adiciona" >
         <div className="">
             <label for="nome">Nome:</label>
@@ -24,6 +29,13 @@ const Formulario=()=>{
             <input id="cpf" type="cpf" placeholder="digite o cpf do seu cliente" className="campo campo-medio" />
         </div> 
     </form>
+
+    <div className="botoes">
+        <BotaoVoltar/>
+        <ButtonCadastro/>
+    </div>
+ 
+    </div>
     )
 }
 export default Formulario

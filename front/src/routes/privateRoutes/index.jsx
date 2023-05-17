@@ -4,6 +4,7 @@ import AuthLayout from '../../component/index';
 
 import PagesHome from '../../pages/Home/home';
 import Quiz from '../../pages/Quiz/quiz';
+import UserLogin from '../../pages/Login/login';
 
 // import Pagesdog from '../../pages/CutDog/PagesCutDog';
 // import PagesForm from '../../pages/Cadastro/postCadastro/PagesForm';
