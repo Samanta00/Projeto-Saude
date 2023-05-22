@@ -31,8 +31,8 @@ const ModalOptions = () => {
         onClick={OptionModal}
       />
     </div>
+      <div className={arrowShow}></div>
     <div className={modalOptions}>
-    <div className={arrowShow}></div>
       <ul>
         <li>Perfil</li>
         <li>Configurações</li>
