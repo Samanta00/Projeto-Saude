@@ -27,6 +27,7 @@ const UserLogin = () => {
 
 
   function onSubmit(event) {
+    console.log("entrou aqui")
     event.preventDefault();
     api.post("/auth/login", values)
       .then(response => response.data)
@@ -54,17 +55,12 @@ const UserLogin = () => {
       </div>
 
        
-
+      
         <form className='login-form'>
           <div className="user-login__form-control">
             <label htmlFor="nome">Usuário</label>
-            <input
-              id="nome"
-              type="text"
-              name="nome"
-              defaultValue={values.nome}
-              onChange={onChange}
-              value={values.nome}
+            <input id="nome" type="text" name="nome" defaultValue={values.nome} onChange={onChange}
+            value={values.nome}
             />
           </div>
           <div className="user-login__form-control">
@@ -87,6 +83,8 @@ const UserLogin = () => {
           <br /><br />
           <input type={'submit'} value={"enviar"} className="user-login__submit-button" onClick={onSubmit} />
         </form>
+      
+
       </div>
     </div>
 
