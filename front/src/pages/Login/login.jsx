@@ -27,14 +27,15 @@ const UserLogin = () => {
 
 
   function onSubmit(event) {
-    console.log("entrou aqui")
+  
     event.preventDefault();
     api.post("/auth/login", values)
       .then(response => response.data)
 
       .then(data => {
         setToken(data.token)
-        navigate('/home')
+        navigate('/home') 
+        console.log("entrou aqui")
       })
       .catch(error => {
         console.error(error)
