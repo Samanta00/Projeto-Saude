@@ -9,7 +9,6 @@ export const PublicRoutes = () => (
   <React.Fragment>
     <Route path="/" element={<PagesLogin />} />
     <Route path='/create' element={<Cadastro/>}/>
-    
   </React.Fragment>
 )
 

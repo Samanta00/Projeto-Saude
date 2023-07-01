@@ -3,7 +3,7 @@ import { Route, } from 'react-router-dom';
 import AuthLayout from '../../component/index';
 
 import PagesHome from '../../pages/Home/home';
-import Quiz from '../../pages/Quiz/quiz';
+import Quiz from '../../pages/Quiz';
 import UserLogin from '../../pages/Login/login';
 
 // import Pagesdog from '../../pages/CutDog/PagesCutDog';

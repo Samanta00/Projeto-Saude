@@ -1,0 +1,125 @@
+.opcoesBox {
+  width: 500px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding-top: 70px;
+  color: white;
+}
+
+.pointsShow {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.pointsShow button {
+  background-color: #224fc2;
+  width: 80px;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.point {
+  color: green;
+}
+
+.infoPerguntas {
+  width: 600px;
+  position: relative;
+  color: rgba(0, 0, 0, 0.614);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoPerguntas img {
+  width: 200px;
+}
+
+.infoPerguntas .flex-direction {
+  display: flex;
+  width: 600px;
+}
+
+.infoPerguntas .flex-direction .pergunta {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.contagemPerguntas {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.contagemPerguntas span {
+  font-size: 20px;
+}
+
+.contagemPerguntas .contagem {
+  color: blue;
+}
+
+.grupoResposta {
+  background-color: #224fc2;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex: 1 1 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid #3E2F5B;
+  cursor: pointer;
+}
+
+.grupoResposta .ordem {
+  padding-left: 8px;
+}
+
+.grupoResposta .alternativa {
+  display: flex;
+  justify-content: center;
+}
+
+.resposta {
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.botao {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+  color: #FFF;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.grupoResposta:hover {
+  background-color: #3E2F5B;
+}
+
+.botao:hover {
+  background-color: #3E2F5B;
+}
