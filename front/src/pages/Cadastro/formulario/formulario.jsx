@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonCadastro from '../postCadastro/PostButton'
+import ButtonCadastro from '../postCadastro/postButton';
 import { BotaoVoltar } from "../updateRegistration/buttonBack";
 import '../css/cadastro.css'
 
