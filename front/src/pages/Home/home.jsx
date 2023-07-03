@@ -1,6 +1,6 @@
 import React from 'react';
-import Conteudo from './conteudo';
-
+import Conteudo from './introducao';
+import Perguntas from './perguntas';
 
 import Navbar from '../../component/NavBar';
 import ModalOptions from '../../component/NavBar/ModalOptions'
@@ -13,6 +13,7 @@ function PagesHome(props) {
       <Navbar />
       <ModalOptions />
       <Conteudo/>
+      <Perguntas/>
     </>
 
   )
