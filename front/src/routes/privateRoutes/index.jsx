@@ -3,15 +3,11 @@ import { Route, } from 'react-router-dom';
 import AuthLayout from '../../component/index';
 
 import PagesHome from '../../pages/Home/home';
-<<<<<<< HEAD
-import Quiz from '../../pages/Quiz';
-import UserLogin from '../../pages/Login/login';
-=======
-import Quiz from '../../pages/Quiz/quiz';
+import Quiz from '../../pages/Quiz/index.jsx';
 import Recomendacoes from '../../pages/Recomendacoes/index.jsx';
+import Agenda from '../../pages/Agenda/index.jsx';
 
 
->>>>>>> b666353 (feat: criado rota de recomendações)
 
 // import Pagesdog from '../../pages/CutDog/PagesCutDog';
 // import PagesForm from '../../pages/Cadastro/postCadastro/PagesForm';
@@ -24,7 +20,9 @@ export const PrivateRoutes = () => (
 
             <Route path="/home" element={<PagesHome/>}/> 
             <Route path="/quiz" element={<Quiz/>} />
-            <Route path="/recomendacoes" element={<Recomendacoes/>} />
+            <Route path='/recomendacoes' element={<Recomendacoes/>}/>
+            <Route path='/agendamento' element={<Agenda/>}/>
+
             {/* <Route path="/dog" element={<Pagesdog />} />
             <Route path="/form" element={<PagesForm />} />
             <Route path="/editformulario/:id" element={<PagesEditForm />} /> */}
