@@ -11,7 +11,7 @@ const estados = [
 const MenuEstados = ({ onSelectEstado }) => {
   return (
     <div>
-      <h3>Selecione o estado:</h3>
+      <h3>Selecione seu estado para encontrar pontos de referências mais próximos:</h3>
       <ul className='listaEstados'>
         {estados.map((estado) => (
           <li key={estado}>
