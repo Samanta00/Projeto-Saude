@@ -6,7 +6,7 @@ const Conteudo=()=>{
         <div className="recomendacoes-container">
         <h1>Recomendações para o Tratamento do Câncer de Boca</h1>
         <p>
-          Aqui estão alguns dos maiores hospitais especializados no tratamento do câncer de boca:
+          Aqui estão alguns dos maiores hospitais no Brasil especializados no tratamento do câncer de boca:
         </p>
         <ul>
           <li>Hospital do Câncer de São Paulo</li>
