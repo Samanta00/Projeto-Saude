@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import logo from '../../assets/img/denteIcone.png'
 
 const Navbar = () => {
 
@@ -33,6 +34,7 @@ const Navbar = () => {
                 {/* web */}
                 <div className="web-nav">
                     <ul>
+                        <li className="container__icone"><img className="Icone" src={logo} alt="" /></li>
                         <li><Link to="/home">Home</Link></li>
                         <li><Link to="/quiz">Quiz</Link></li>
                         <li><Link to="/recomendacoes">Recomendações</Link></li>

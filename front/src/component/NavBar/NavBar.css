@@ -2,13 +2,15 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins";
 }
 
 /* ---------------- Navbar and burger menu ------------------ */
 nav {
   width: 100%;
   height: 5em;
-  background-color: rgb(37, 39, 53);
+  /* background-color: rgb(37, 39, 53); */
+  background-color: #FFFFFF;
   display: flex;
   justify-content: flex-start;
   padding: 1em;
@@ -71,6 +73,10 @@ nav {
   font-weight: bold;
 }
 
+.Icone {
+  width: 25px;
+}
+
 /* ----- animations--------- */
 .burger-bar.clicked:nth-child(1){
   transform: rotate(45deg) translate(0.3em, 0.8em);
@@ -107,7 +113,8 @@ nav {
 
 .web-nav ul li :only-child {
   text-decoration: none;
-  color: white;
+  /* color: white; */
+  color: rgb(60, 199, 152);
   font-weight: bold;
 }
 

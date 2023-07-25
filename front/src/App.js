@@ -1,6 +1,6 @@
 // import UserLogin from "./component/User/login/login";
 
-import "./App.css";
+import './App.css'
 import { Routes } from "./routes/index";
 
 function App() {
