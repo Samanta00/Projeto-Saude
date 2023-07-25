@@ -31,10 +31,10 @@ function Perguntas() {
           </h3>
           <div className="container__resposta">
             <h4 className="resposta__texto">
-                O Projeto de Software tras diversas formas educacionais e
-                objetivas para a prevenção e o conhecimento do cancer bucal,
-                desta forma uma pessoa saudavel será Ciente Sobre o assunto e
-                suas responsabilidades para uma saúde saudavel.
+              O Projeto de Software tras diversas formas educacionais e
+              objetivas para a prevenção e o conhecimento do cancer bucal,
+              desta forma uma pessoa saudavel será Ciente Sobre o assunto e
+              suas responsabilidades para uma saúde saudavel.
             </h4>
           </div>
         </div>
@@ -45,14 +45,18 @@ function Perguntas() {
         <img src={medicoAceno} alt="" className="perguntas-segunda__imagem" />
         <div className="container__perguntas-conteudo">
           <h3 className="perguntaIntrodutoria">
-            Não sofro com A doença, Como o Sistema Poderia me Ajudar?
+            Sofro com A doença, Como o Sistema Poderia me Ajudar?
           </h3>
           <div className="container__resposta">
             <h4 className="resposta__texto">
-                O Projeto de Software tras diversas formas educacionais e
-                objetivas para a prevenção e o conhecimento do cancer bucal,
-                desta forma uma pessoa saudavel será Ciente Sobre o assunto e
-                suas responsabilidades para uma saúde saudavel.
+              Na Plataforma do Sistema de Software existem alguns cuidados
+              especiais pensados em você, uns deles é o calendário de
+              medicamentos assim que você agendar os dias para seus remedios
+              será enviado uma mensagem no seu whatsapp para te lembrar do
+              medicamento necessário para o dia agendado. Como forma de
+              auxilia-lo(a) a um bem estar melhor, existe uma categoria de
+              recomendações médicas no sistema para que você saiba com qual
+              especialista médico realmente você pode se orientar.
             </h4>
           </div>
         </div>
