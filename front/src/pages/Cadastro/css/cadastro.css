@@ -1,42 +1,87 @@
-body {
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    margin: 0px;
-    padding: 0px;
+/* Estilos específicos para o componente de cadastro */
+
+.classeMae {
+    max-width: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.classeMae{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 360px;
-    height: 420px;
-    margin: auto;
-    box-shadow: 0px 0px 10px black;
-    box-sizing: border-box;
+.container__botaoVoltar span {
+    color: #007BFF;
+    cursor: pointer;
+}
+
+.container__botaoVoltar span:hover {
+    text-decoration: underline;
+}
+
+#titulo-form {
     text-align: center;
-    background: #ffffff10;
-    border: 2px solid #ffffff30;
-    backdrop-filter: blur(50px);
+    margin-bottom: 20px;
+    color: #333;
 }
-input {
-    width: 60%;
-    height: 34px;    
-    padding-left: 5px;
-    box-sizing: border-box;
+
+#form-adiciona {
+    width: 100%;
 }
-.botoes{
+
+#formulario-container {
+    max-width: 600px;
+}
+
+/* Estilos para os campos de entrada */
+.grupo {
     display: flex;
-    grid-gap: 5px 8px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
 }
+
 label {
     display: block;
-    color: white;
-  }
-#titulo-form{
-    color: #00a7cc;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.campo-medio {
+    width: 100%;
+    padding: 1em;
+}
+
+/* Estilos para os botões */
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilos para os botões Voltar e Cadastro */
+.botoes button {
+    width: auto;
+    padding: 10px;
+    background-color: var(--verde-claro);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes button:hover {
+    background-color: var(--azul);
+}
+
+.botoes button:active {
+    background-color: var(--azul-claro);
 }

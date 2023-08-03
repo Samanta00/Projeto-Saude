@@ -4,13 +4,13 @@ import Formulario from '../formulario/formulario';
 
 const PagesEditForm = () => {
     return (
-        <section className="container">
+        <div className="container" id='formulario-container'>
             
                 <Formulario />
                 <Button />
           
 
-        </section>
+        </div>
     )
 }
 export default PagesEditForm

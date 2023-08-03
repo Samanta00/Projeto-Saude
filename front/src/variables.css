@@ -1,0 +1,10 @@
+:root {
+    --branco: #FFFFFF;
+    --azure: rgb(240, 255, 255);
+    --verde-claro: rgb(60, 199, 152);
+    --azul: rgb(0, 183, 255);
+    --azul-claro: rgb(154, 181,240);
+    --azul-escuro: rgb(19, 104, 144);
+
+    --fonte-principal: "Poppins";
+}

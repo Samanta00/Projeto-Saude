@@ -1,14 +1,15 @@
 import React from "react";
 import { useNavigate } from 'react-router-dom';
+import "../css/cadastro.css"
 
-export const BotaoVoltar=()=>{
+export const BotaoVoltar=({ children })=>{
     const navigate = useNavigate()
     function Voltar() {
         return navigate(`/`)
     }
     return (
         <>
-            <button onClick={Voltar}>Voltar</button>
+            <span onClick={Voltar}>{children}</span>
         </>
     
     )

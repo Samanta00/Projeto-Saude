@@ -1,67 +1,62 @@
-import React, { useState, useContext } from 'react';
-import StoreContext from '../../Store/context';
-import { useNavigate, Link } from 'react-router-dom';
-import api from '../Cadastro/apiCadastros';
-import ImgMedico from '../../assets/img/dentista-editado.png'
-import './login.css';
-
+import React, { useState, useContext } from "react";
+import StoreContext from "../../Store/context";
+import { useNavigate, Link } from "react-router-dom";
+import api from "../Cadastro/apiCadastros";
+import Logo from "../../assets/img/denteIcone.png";
+import "./login.css";
 
 const UserLogin = () => {
   const [values, setValues] = useState({
     nome: "desafiosharenergy",
-    senha: "sh@r3n3rgy"
+    senha: "sh@r3n3rgy",
   });
 
   const [error, setError] = useState(null);
   const { setToken } = useContext(StoreContext);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   function onChange(event) {
     const { value, name } = event.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
   }
 
-
-
   function onSubmit(event) {
-  
     event.preventDefault();
-    api.post("/auth/login", values)
-      .then(response => response.data)
+    api
+      .post("/auth/login", values)
+      .then((response) => response.data)
 
-      .then(data => {
-        setToken(data.token)
-        navigate('/home') 
-        console.log("entrou aqui")
+      .then((data) => {
+        setToken(data.token);
+        navigate("/home");
+        console.log("entrou aqui");
       })
-      .catch(error => {
-        console.error(error)
-      })
+      .catch((error) => {
+        console.error(error);
+      });
   }
 
   return (
-    <div className='container'>
-      
+    <div className="container">
       <div className="login">
-        
-        <h1 className="user-login__title">Happy Health APP</h1>
-       
-        
-     
-        <div className='Divimagem'>
-        <img src={ImgMedico} className='Imagemdentista'></img>
-      </div>
+        <div className="Divimagem">
+          <img src={Logo} className='logo' />
+        </div>
+        <h1 className="user-login__title">Happy Health</h1>
 
-       
-      
-        <form className='login-form'>
+        <form className="login-form">
           <div className="user-login__form-control">
             <label htmlFor="nome">Usuário</label>
-            <input id="nome" type="text" name="nome" defaultValue={values.nome} onChange={onChange}
-            value={values.nome}
+            <input
+              id="nome"
+              type="text"
+              name="nome"
+              defaultValue={values.nome}
+              onChange={onChange}
+              value={values.nome}
             />
           </div>
           <div className="user-login__form-control">
@@ -75,20 +70,19 @@ const UserLogin = () => {
               value={values.senha}
             />
           </div>
-          {error && (
-            <div className="user-login__error">{error}</div>
-          )}
+          {error && <div className="user-login__error">{error}</div>}
 
-          <Link to='/create'>Novo Cadastro</Link>
+          <p>Não tem uma conta? <Link to="/create">Cadastre-se aqui</Link></p>
 
-          <br /><br />
-          <input type={'submit'} value={"enviar"} className="user-login__submit-button" onClick={onSubmit} />
+          <input
+            type={"submit"}
+            value={"enviar"}
+            className="user-login__submit-button"
+            onClick={onSubmit}
+          />
         </form>
-      
-
       </div>
     </div>
-
   );
 };
 

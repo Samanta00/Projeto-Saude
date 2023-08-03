@@ -22,7 +22,7 @@ function submit(e){
 }  
 return(
     <div>
-        <button onClick={submit}>Adicionar</button>
+        <button onClick={submit}>Cadastrar</button>
     </div>
 )
 }
