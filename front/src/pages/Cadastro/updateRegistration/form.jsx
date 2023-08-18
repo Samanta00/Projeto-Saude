@@ -4,12 +4,13 @@ import Formulario from '../formulario/formulario';
 
 const PagesEditForm = () => {
     return (
-        <div className="container" id='formulario-container'>
+        <div className="Box">
+            <div className="container" id='formulario-container'>
             
-                <Formulario />
-                <Button />
-          
-
+                    <Formulario />
+                    <Button />
+            
+            </div>
         </div>
     )
 }
