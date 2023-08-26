@@ -1,0 +1,150 @@
+.navbar {
+    background: #1E50D2;
+    color: #fff;
+    border-bottom: 1px solid #466EE6;
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
+nav {
+    background: #fff;
+    padding: 5px 1rem;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 991.98px){
+
+#heading-section {
+    padding: 50px 0 0 0;
+}  
+}
+
+
+#heading-section {
+    background-color: #1E50D2;
+    padding: 80px 0 0 0;
+}
+.containerStart{
+    background-color: #1E50D2;
+}
+section {
+    display: block;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+#heading-section h1 {
+    color: #ffffff;
+    text-align: left;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.h1, h1 {
+    font-size: 2.5rem;
+}
+
+.containerStart {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#heading-section h2 {
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #b4d2ff;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px){
+ #heading-text-container {
+    margin-right: -60px;
+}   
+}
+.justify-content-center {
+    -ms-flex-pack: center!important;
+    justify-content: center!important;
+}
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.mt-3, .my-3 {
+    margin-top: 1rem!important;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+}
+.pt-4, .py-4 {
+    padding-top: 1.5rem!important;
+}
+@media (min-width: 768px){
+.containerStart {
+    max-width: 720px;
+} 
+}
+
+
+#heading-section h3 {
+    margin-top: 86px;
+    position: relative;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+}
+@media (min-width: 768px){
+.order-md-last {
+    -ms-flex-order: 13;
+    order: 13;
+}   
+}
+@media (min-width: 768px){
+.col-md-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}    
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .offer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+  }
