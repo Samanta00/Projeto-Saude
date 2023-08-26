@@ -31,7 +31,9 @@ const Buttons = (props) => {
 						Email: ${pessoa.email}
 						telefone:${pessoa.telefone}  
 						endereço: ${pessoa.endereco}  
-						cpf: ${pessoa.cpf}`)
+						cpf: ${pessoa.cpf}
+						senha:${pessoa.senha}`)
+
 		}
 		catch (error) {
 			console.log(error)

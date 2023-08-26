@@ -14,7 +14,7 @@ const Formulario = () => {
             id="nome"
             name="nome"
             type="text"
-            placeholder="digite o nome do seu cliente"
+            placeholder="Digite seu nome completo no campo"
             className="campo"
           />
         </div>
@@ -24,7 +24,7 @@ const Formulario = () => {
             id="email"
             name="email"
             type="text"
-            placeholder="digite o email do seu cliente"
+            placeholder="Ex:Ana.nunes@hotmail.com"
             className="campo campo-medio"
           />
         </div>
@@ -34,7 +34,7 @@ const Formulario = () => {
             id="telefone"
             name="telefone"
             type="text"
-            placeholder="digite o telefone do seu cliente"
+            placeholder="EX:+55(81)981311245"
             className="campo campo-medio"
           />
         </div>
@@ -43,7 +43,7 @@ const Formulario = () => {
           <input
             id="endereco"
             type="endereco"
-            placeholder="digite o endereço do seu cliente"
+            placeholder="Seu Endereço"
             className="campo campo-medio"
           />
         </div>
@@ -52,7 +52,16 @@ const Formulario = () => {
           <input
             id="cpf"
             type="cpf"
-            placeholder="digite o cpf do seu cliente"
+            placeholder="Digite seu CPF"
+            className="campo campo-medio"
+          />
+        </div>
+        <div className="grupo">
+          <label for="cpf">Senha</label>
+          <input
+            id="senha"
+            type="senha"
+            placeholder="Digite uma senha"
             className="campo campo-medio"
           />
         </div>

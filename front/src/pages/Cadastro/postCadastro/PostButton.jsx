@@ -16,9 +16,11 @@ function submit(e){
        email:document.getElementById('email').value,
        telefone:document.getElementById('telefone').value,
        endereco:document.getElementById('endereco').value,
-       cpf:document.getElementById('cpf').value
+       cpf:document.getElementById('cpf').value,
+       password:document.getElementById('senha').value
    }
    cadastrandoPessoa(cadastroPessoas)
+   console.log('cadastro realizado')
 }  
 return(
     <div>

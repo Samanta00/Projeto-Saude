@@ -2,6 +2,8 @@ const dataSchema = require('../models/customersSchema')
 const mongoose = require('mongoose')
 const jwt = require('jsonwebtoken')
 const SECRET = 'ellen'
+import bcrypt from 'bcrypt';
+
 
 import { Request, Response } from 'express'
 
@@ -39,13 +41,13 @@ export const getPeople = async (req: Request, res: Response) => {
 // criar método para cadastrar uma Pessoa 
 export const createRegistration = async (req: Request, res: Response) => {
     try {
-        const { nome, email, telefone, endereco, cpf } = req.body
+        const { nome, email, telefone, endereco, cpf, password } = req.body
 
         if (!nome.trim() || nome == undefined || nome.length <= 1 || nome == "") {
             console.log('Nome está sendo Passado indefinidamente.')
         }
         else if (!email.trim() || email == undefined || email.length <= 5 || email.includes("@") == false || email == "") {
-            console.log('email esta sendo passado indefinidamente.')
+            console.log('email esta sendo passado indefinidamente. teste123')
         }
         else if (!telefone.trim() || telefone == undefined || telefone.length < 10 || telefone == "") {
             console.log('Telefone está sendo Passado indefinidamente.')
@@ -56,19 +58,29 @@ export const createRegistration = async (req: Request, res: Response) => {
         else if (!cpf.trim() || cpf == undefined || cpf.length < 11 || cpf == "") {
             console.log('CPF está sendo passado indefinidamente.')
         }
+        else if (!password.trim() || password == undefined || password.length < 5 || password == "") {
+            console.log('Senha está sendo passada indefinidamente.')
+        }
 
         else {
+            const saltRounds = 10;
+            const hashedPassword = await bcrypt.hash(password, saltRounds);
+            console.log('Senha: ', password);
+            console.log('Hash da Senha: ', hashedPassword);
+            
             const newNote = new dataSchema({
                 nome: nome,
                 email: email,
                 telefone: telefone,
                 endereco: endereco,
                 cpf: cpf,
+                password:hashedPassword,
                 _id: new mongoose.Types.ObjectId()
             })
-
+            
             const savedNote = await newNote.save()
             res.status(201).json(savedNote)
+            console.log("Adicionado")
         }
 
 
@@ -127,5 +139,22 @@ export const deletePeopleById = async (req: Request, res: Response) => {
     }
 }
 
+export const login = async (req: Request, res: Response) => {
+    try {
+        const { email, senha } = req.body;
+
+        // Encontre o usuário pelo email
+        const user = await dataSchema.findOne({ email });
+
+        if (user && (await bcrypt.compare(senha, user.senha))) {
+            const token = jwt.sign({ userId: user._id }, SECRET, { expiresIn: '30d' });
+            return res.json({ tipo: 'Bearer', token });
+        } else {
+            res.status(401).json({ message: 'Credenciais inválidas.' });
+        }
+    } catch (error) {
+        res.status(500).json({ message: 'Erro ao fazer login.' });
+    }
+};
 
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './style.css'
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import WhatsAppButton from 'react-whatsapp-button';
+//import WhatsAppButton from 'react-whatsapp-button';
 
 const AgendaMedicacao = () => {
   const [medicamentos, setMedicamentos] = useState([]);
