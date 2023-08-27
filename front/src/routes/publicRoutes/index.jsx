@@ -9,7 +9,7 @@ import Quiz from '../../pages/Quiz';
 export const PublicRoutes = () => (
   <React.Fragment>
     <Route path='/' element={<Start/>}/>
- 
+
     <Route path="/login" element={<PagesLogin />} />
     <Route path='/create' element={<Cadastro/>}/>
     <Route path='/quiz' element={<Quiz/>}/>

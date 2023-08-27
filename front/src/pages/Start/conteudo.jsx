@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './style.css'
+import './style.css';
 import usuario from "./usuario-circulo.png";
+import seta from './download.svg';
 
 const ConteudoStart = () => {
     return (
@@ -23,13 +24,16 @@ const ConteudoStart = () => {
                     </p>
                     <a className="containers__botao" href="#">Assine</a>
 
-                    <a className="containers__botao botao_secundario" href="3">Preço</a>
+                    <a className="containers__botao botao_secundario" href="#">Preço</a>
+
+                    <a className='nossos-precos' href='#teste'><img src={seta} alt="seta"/>Preços</a>
                 </div>
                 </section>
                 <section className='containers secundario'>
                     <h2 className='descricao__titulo'>
                         Por que estamos sendo escolhidos
                     </h2>
+
 
                     <div className='containers_centro'>
                         <div className="containers__card">
@@ -59,12 +63,13 @@ const ConteudoStart = () => {
 
                     <section className='conteiners terciario'>
                         <div class="col">
-                                <h4>Até 2-3x mais barato que os serviços de reconhecimento manual</h4>
+                                <h4 id='teste'>Até 2-3x mais barato que os serviços de reconhecimento manual</h4>
                                 <span class="label-text">
                                     Nenhuma pessoa está envolvida na resolução de captchas.<br/>Graças a isso, fornecemos o preço mais baixo do mercado.
                                 </span>
                             </div>
                     </section>
+                    
             </div>                
             
     );
