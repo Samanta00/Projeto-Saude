@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './style.css'
-import usuario from "./usuario-circulo.png";
+//import usuario from "./usuario-circulo.png";
 
 const ConteudoStart = () => {
     return (
