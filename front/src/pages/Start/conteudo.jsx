@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import './style.css';
-import usuario from "./usuario-circulo.png";
-
 import seta from './download.svg';
 import seloGarantia from './img/selo-garantia.svg';
 import desconto from './img/desconto.png'
