@@ -5,15 +5,11 @@ import dentista from "../../assets/img/dentista-editado.png";
 function Conteudo() {
   return (
     <>
-    <hr/>
       <div className="container__primario">
-        
         <div className="container__caixa">
-          
           <div className="container__caixa-icone">
             <img src={dentista} className="iconeSite" />
           </div>
-        
           <div className="container__caixa-conteudo">
             <h1 className="container__titulo">Gold teeth health</h1>
             <h2 className="container__comentario">
@@ -26,9 +22,6 @@ function Conteudo() {
           </div>
         </div>
       </div>
-      <hr/>
-
-      
     </>
   );
 }
