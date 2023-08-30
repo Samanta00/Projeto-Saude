@@ -12,7 +12,7 @@ const ConteudoStart = () => {
     return (
         <div className='startContainer'>
             <div>
-                <nav className="navbar navbar-expand-lg">
+                <nav className="navbar navbar-expand-lg" id='navStart'>
                     
                     <a className='botao_navbar' href="#">Login</a>
                     <a className='botao_navbar' href="#">Registre-se</a>
