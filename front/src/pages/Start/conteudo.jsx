@@ -15,12 +15,8 @@ const ConteudoStart = () => {
     return (
         <div className='landingPage'>
             <div>
-<<<<<<< HEAD
                 <nav className="navbar navbar-expand-lg" id='navStart'>
                     
-=======
-                <nav className="navbar-landingPage">
->>>>>>> b484f7f28effda027b2fc0dbde839ed642209098
                     <a className='botao_navbar' href="#">Login</a>
                     <a className='botao_navbar' href="#">Registre-se</a>
                 </nav>

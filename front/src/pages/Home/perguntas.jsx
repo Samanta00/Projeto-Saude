@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./conteudo.css";
 import aceno from "../../assets/img/acenando.jpg";
 import servicos from "../../assets/img/euu.jpeg";
-import woman from "../../assets/img/euu.jpg";
+import woman from "../../assets/img/euu.jpeg";
 import clinica from "../../assets/img/clinica.png";
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></link>
 
