@@ -411,7 +411,7 @@ svg {
   position: relative;
   display: block;
 }
-=======
+
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 575.98px) {}
->>>>>>> b484f7f28effda027b2fc0dbde839ed642209098
+
