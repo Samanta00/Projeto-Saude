@@ -54,6 +54,7 @@ const Navbar = () => {
                     <li><Link to="/galeria">Galeria</Link></li>
                 </ul>
             </div>
+            <hr/>
         </div>
     )
 }

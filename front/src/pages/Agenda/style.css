@@ -1,29 +1,65 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  .caixaAgenda {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
 
-  h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
   
-  .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-  }
+  .subcomponents-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Alinha as divs lado a lado */
+  gap: 20px; /* Espaçamento entre as divs */
+  text-align: center;
+}
+
+.subcomponent {
+  background-color: #f4f4f4; /* Cor de fundo */
+  border: 1px solid #ddd; /* Borda */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Borda arredondada */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.subcomponent h2 {
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+.subcomponent h5 {
+  color: #666; /* Cor do texto secundário */
+  margin-top: 10px; /* Espaçamento superior */
+}
+
+.subcomponent p {
+  margin-top: 20px; /* Espaçamento superior */
+  font-weight: bold; /* Texto em negrito */
+}
+
+.subcomponent button {
+  margin-top: 20px; /* Espaçamento superior */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  border-radius: 4px; /* Borda arredondada */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição de cor ao passar o mouse */
+}
+
+.subcomponent button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+.subcomponent button a {
+  color: #fff; /* Cor do texto do link dentro do botão */
+  text-decoration: none; /* Remova a sublinhado do link dentro do botão */
+}
+
+.servicos{
+  width: 66px;
+  height: 65px;
+  margin-left: 15px;
+  border-radius: 3vw;
+}
+  
+
+
+
+  
+
   .labelAgenda {
     font-weight: bold;
     margin-bottom: 5px;
@@ -51,3 +87,219 @@
     cursor: pointer;
     transition: background-color 0.3s;
   }
+
+/* Adicione estilos para centralizar o formulário */
+.centralized-form {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px; /* Largura máxima do formulário */
+  width: 100%; /* Adapte a largura conforme necessário */
+  margin: 0 auto; /* Centralize horizontalmente */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+.centralized-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centralized-form h2 {
+  margin-top: 10px;
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .centralized-form {
+    width: 90%;
+  }
+}
+/* Estilização para a página de agenda de consulta médica */
+.pagina {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Cor do texto */
+}
+
+.filtro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização para os rótulos (labels) */
+label {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* Cor do texto */
+}
+
+/* Estilização para os selects */
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc; /* Cor da borda */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  color: #333; /* Cor do texto */
+}
+
+/* Estilização para o botão de pesquisa */
+button {
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilização para o botão de pesquisa quando passa o mouse */
+button:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
+
+
+/* Estilização para a seção de resultados da consulta */
+.resultados {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #00eb7e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilização para o título "Resultados da Consulta" */
+.resultados h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilização para cada item de resultado */
+.resultados li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização para os detalhes do resultado */
+.resultados li strong {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Estilização para o botão "Agendar Consulta" */
+.resultados li button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilização para o botão "Agendar Consulta" quando passa o mouse */
+.resultados li button:hover {
+  background-color: #0056b3;
+}
+
+
+/* Estilos adicionais conforme necessário */
+/* Estilização para a seção de agendamento de medicação */
+.AgendamentoMedicacao {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #00eb7e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilização para o título "Agenda de Medicação" */
+.titleAgendamento {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilização para rótulos e campos de entrada */
+.labelAgenda {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Estilização para o botão "Adicionar Medicação" */
+.buttonCalendario {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilização para o botão "Adicionar Medicação" quando passa o mouse */
+.buttonCalendario:hover {
+  background-color: #0056b3;
+}
+
+/* Estilização para a lista de medicamentos agendados */
+.ulAgendamento {
+  list-style: none;
+  padding: 0;
+  margin-top: 2vw;
+}
+
+/* Estilização para cada item de medicamento agendado */
+.ulAgendamento .liAgendamento {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilização para o botão "Enviar Lembrete" */
+.buttonCalendario.lembrete {
+  background-color: #4caf50;
+}
+
+/* Estilização para o botão "Enviar Lembrete" quando passa o mouse */
+.buttonCalendario.lembrete:hover {
+  background-color: #45a049;
+}

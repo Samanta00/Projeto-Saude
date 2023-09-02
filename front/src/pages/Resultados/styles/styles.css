@@ -1,0 +1,150 @@
+.resultados-medicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    height: 13vh; /* Define a altura para preencher toda a tela verticalmente */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 2vw;
+  }
+  .chat-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .contact-list {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .contact-list h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-list li.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .chat-container {
+    flex: 2;
+    padding: 10px;
+  }
+  
+  .chat {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  .chat h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .message-list {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .sender {
+    font-weight: bold;
+  }
+  
+  .message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .message-input button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .no-contact-selected {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .message-list img {
+    max-width: 200px; /* Defina a largura máxima desejada para as imagens */
+    height: auto; /* Mantém a proporção da imagem */
+  }
+  /* Adicione estilos para o modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Estilos para a imagem em tamanho completo */
+  .full-size-image {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+  
+  /* Adicione um estilo para indicar que a imagem é clicável */
+  .clickable {
+    cursor: pointer;
+  }
+  
