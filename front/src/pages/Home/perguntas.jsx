@@ -73,7 +73,8 @@ function Perguntas() {
               <i className="fas fa-minus"></i>
             </span>
             <a className="elementor-accordion-title" href="#">
-              Sofro com A doença, Como o Sistema Poderia me Ajudar?
+            Sofro com A doença, Como o Sistema Poderia me Ajudar?
+
             </a>
           </div>
           {activeTab === 1 && (
