@@ -143,7 +143,9 @@ h4 {
 }
 
 .container__perguntas-caixa {
-  display: flex;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
   margin: 10em 0 10em 0;
@@ -195,15 +197,15 @@ h4 {
 
 .container__perguntas-caixa {
   display: flex;
-  align-items: flex-start;
-  
+  align-content: center;
+  align-items: center;
   margin-top: 20px; /* Espaçamento superior para separar das perguntas anteriores */
 }
 
 .container__perguntas-imagem img {
-  width: 60%; /* Ajuste a largura da imagem conforme necessário */
+  width: 90%; /* Ajuste a largura da imagem conforme necessário */
   height: auto;
-  border-radius: 52px;
+  border-radius: 60px;
 }
 
 .elementor-element.elementor-element-188ba92 img {
@@ -246,7 +248,7 @@ h4 {
 .homeContainer {
   text-align: center;
   padding: 44px;
-  margin-top: -11vw;
+  margin-top: 10px;
 }
 
 .homeContainer h2 {
@@ -266,8 +268,7 @@ h4 {
   line-height: 1.2em;
 }
 
-.homeContainer p {
-  
+.homeContainer p { 
   margin-bottom: 1.6em;
   text-align: center;
   color: var(--e-global-color-e9cede1 );
@@ -281,6 +282,14 @@ h4 {
   /* Estilos para o wrapper principal, se necessário */
 }
 
+.component-especialista{
+  display: flex;
+  gap: 10px;
+}
+
+.subcomponent-especialista{
+  height: 500px;
+}
 /* Estilos para a seção de serviços */
 .component-wrapper {
   padding: 40px; /* Espaçamento interno */
@@ -341,9 +350,11 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 22px;
-  height: 58vh
+  width: 100%;
+  height: 58vh;
+  background-color: rgb(210, 207, 207);
+  opacity: 0.5; /* 50% de opacidade para todo o elemento */
+  margin: 0 0 20px 0;
 }
 
 .itensFaixa {
@@ -416,7 +427,11 @@ svg {
 }
 
 /*Extra small devices (portrait phones, menor que 576px)*/
-@media (max-width: 575.98px) {}
+@media (max-width: 1200px) {
+  .container__perguntas-caixa{
+    display: block;
+  }
+}
 
 /* Reset default margin and padding */
 * {
@@ -437,6 +452,7 @@ body {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: block;
 }
 
 /* Accordion title styles */
@@ -449,7 +465,7 @@ body {
 }
 
 /* Apply the requested background color to accordion button */
-.elementor-tab-title {
+.elementor-tab-title a {
   background-color: #6fef97;
   color: #fff; /* Change text color to make it readable */
 }
@@ -467,9 +483,10 @@ body {
 
 /* Accordion content styles */
 .elementor-tab-content {
-  padding: 15px;
+  padding: 5px;
+  align-items: center;
   display: none;
-  max-height: 0; /* Set max-height to 0 to hide the content */
+  max-height: auto; /* Set max-height to 0 to hide the content */
   overflow: hidden; /* Hide content that exceeds max-height */
   transition: max-height 0.3s ease; /* Add smooth transition */
 }
