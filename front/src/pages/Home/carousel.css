@@ -1,0 +1,90 @@
+/* Estilos para o carrossel */
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Define a largura máxima do carrossel */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Adicione uma transição suave ao trocar de imagem */
+  }
+  
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease; /* Adicione uma transição suave à opacidade dos botões */
+  }
+  
+  .carousel button:hover {
+    opacity: 1;
+  }
+  
+  .carousel .prev {
+    left: 10px;
+  }
+  
+  .carousel .next {
+    right: 10px;
+  }
+  
+  /* Estilos para os dots de navegação */
+  .carousel .dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .carousel .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicione uma transição suave à cor de fundo dos dots */
+  }
+  
+  .carousel .dot.active {
+    background-color: #0074d9; /* Cor de destaque para o dot ativo */
+  }
+  
+  .slide-indicators {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .slide-indicators span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slide-indicators span.active {
+    background-color: #0074d9;
+  }
+  
+  /* Estilos para tornar o carrossel responsivo */
+  @media (max-width: 768px) {
+    .carousel button {
+      font-size: 14px; /* Reduz o tamanho dos botões em telas menores */
+    }
+  }
+  
+  
