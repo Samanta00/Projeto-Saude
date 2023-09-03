@@ -28,9 +28,9 @@ const ConteudoStart = () => {
                     <p className='lp-sc-primario__texto'>
                         Pelo menos 97% eficaz, até 30x mais rápido em resultados Médicos
                     </p>
-                    <a className="lp-sc-primario__botao" href="#">Assine</a>
+                    <a className="lp-sc-primario__botao" href="aa">Assine</a>
 
-                    <a className="lp-sc-primario__botao botao_secundario" href="#">Preço</a>
+                    <a className="lp-sc-primario__botao botao_secundario" href="aa">Preço</a>
 
                     <a className='nossos-precos__seta' href='#row-tabela-preco'><img src={seta} alt="seta" />Preços</a>
                 </div>
@@ -165,7 +165,6 @@ const ConteudoStart = () => {
                                 <li>Todos os recursos</li>
                                 <li>Suporte 24/7</li>
                             </ul>
-                            <button className="buy-button__preco">Comprar</button>
                         </div>
                         <div className="preco__plano">
                             <p className='price__titulo'>Plano Premium</p>
@@ -174,7 +173,6 @@ const ConteudoStart = () => {
                                 <li>Todos os recursos</li>
                                 <li>Suporte 24/7</li>
                             </ul>
-                            <button className="buy-button__preco">Comprar</button>
                         </div>
                         <div className="preco__plano">
                             <p className='price__titulo'>Plano Premium</p>
@@ -183,9 +181,9 @@ const ConteudoStart = () => {
                                 <li>Todos os recursos</li>
                                 <li>Suporte 24/7</li>
                             </ul>
-                            <button className="buy-button__preco">Comprar</button>
                         </div>
                     </div>
+                    <button className="buy-button__preco footer-button">Teste Agora</button>
                 </div>
             </section>
 
@@ -194,7 +192,7 @@ const ConteudoStart = () => {
                 <h2 className='lp-titulo-secundario'>
                     Selo de Garantia
                 </h2>
-                <img src={seloGarantia} alt="seta" />
+                <img className='garantia__img' src={seloGarantia} alt="seta" />
                 <p className='garantia__texto'>Se você não gosta da qualidade dos serviços prestados pelo serviço, Garantimos-lhe um reembolso sem explicação no prazo de 3 dias a partir da data da compra.</p>
             </section>
 

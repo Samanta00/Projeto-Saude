@@ -1,8 +1,10 @@
+body { overflow-x: hidden; }
 
 *{
     margin: 0;
     padding: 0;
 }
+
 
 .lp-inicio  {
     height: 100vh;
@@ -66,7 +68,7 @@
 .container_titulo {
     text-align: center;
     padding: 44px;
-    margin-top: -11vw;
+    margin-top: 11vw;
 }
 
 .lp-corpo_centro {
@@ -209,27 +211,95 @@
     margin: 20px 0;
 }
 
-@media screen and (max-width: 768px){
-    .lp-corpo {
-        display: block;
-        margin: 1em;
+@media (max-width: 1200px){
+
+
+    .landingPage {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
     }
 
-    .lp-sc-primario{
+    .lp-inicio{
+        display: block;
         background-image: none;
-        display: block;
+        width: 50%;
+        
     }
 
+    .lp-sc-primario {
+        width: 100%;
+    }
     
+    .container_titulo {
+        width: 100%;
+    }
+
+    .vantagens__corpo__centro {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .card__vantagens {
+        width: 100%;
+    }
+
+    .lp-sc-ajuda {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+        padding: 0;
+    }
+
+    .lp-tabela {
+        padding: 1em;
+        width: 100%;
+    }
+
+    .card__vantagens_img {
+        float: none;
+    }
+
+    .card__ajuda-img{
+        float: none;
+    }
+
+    .garantia__img {
+        width: 30%;
+    }
 }
 
-@media screen and (max-width: 1200px) {
-    .lp-corpo {
+@media  (max-width: 767px){
+    .lp-inicio{
+        background-image: none;
+        width: 100%;
         display: block;
-        margin: 1em;
+ }
+
+    .lp-sc-primario {
+        width: 100%;
+    }
+    
+    .container_titulo {
+        width: 100%;
     }
 
-    .lp-sc-primario{
-        background-image: none;
+    .vantagens__corpo__centro {
+        width: 100%;
+        display: block;
+        font-size: 1em;
     }
+
+    .card__vantagens {
+        width: 100%;
+    }
+
+    .lp-sc-ajuda {
+        width: 100%;
+        display: block;
+        font-size: 1em;
+        padding: 0;
+    }
+
 }
