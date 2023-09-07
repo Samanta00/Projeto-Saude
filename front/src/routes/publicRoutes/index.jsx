@@ -8,6 +8,7 @@ import Quiz from '../../pages/Quiz';
 import Agenda from '../../pages/Agenda';
 import Recomendacoes from '../../pages/Recomendacoes/index.jsx';
 import Resultados from '../../pages/Resultados';
+import PerguntasQuiz from '../../pages/Quiz/paginas/PerguntasQuiz';
 
 export const PublicRoutes = () => (
   <React.Fragment>
@@ -19,6 +20,7 @@ export const PublicRoutes = () => (
     <Route path="/login" element={<PagesLogin />} />
     <Route path='/create' element={<Cadastro/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
+    <Route path='/perguntas' element={<PerguntasQuiz/>}/>
   </React.Fragment>
 )
 
