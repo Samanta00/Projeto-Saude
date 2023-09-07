@@ -1,0 +1,17 @@
+.background {
+    background-image: url("../assets/istockphoto-915097804-612x612.jpg");
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divImagemQuiz {
+    display: block;
+}
+.divButtonQuiz{
+
+}
+.buttonQuiz{
+    width: 100%;
+}
