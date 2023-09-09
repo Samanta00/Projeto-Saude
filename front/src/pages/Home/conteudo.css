@@ -411,7 +411,7 @@ h4 {
 }
 .elementor-icon-box-title {
   margin-bottom: 0px;
-  color: rgb(60, 199, 152);
+  color: rgb(74, 222, 173);
 }
 .elementor-element.elementor-element-24ecee4b .elementor-icon-box-description {
   color: #676767;
@@ -428,9 +428,23 @@ svg {
 
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 1200px) {
+
   .container__perguntas-caixa{
-    display: block;
+    flex-direction: column;
+    box-sizing: border-box;
   }
+
+  .component-especialista {
+    display: block;
+    font-size: 1em;
+    margin: 2em 0;
+  }
+  .subcomponent-especialista{
+    max-height: 400px;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
 }
 
 /* Reset default margin and padding */

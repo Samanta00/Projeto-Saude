@@ -1,0 +1,27 @@
+/* Estilos para o carrossel */
+
+.text-slider {
+  display: none;
+  /* Mantenha os estilos anteriores aqui, fora da consulta de mídia */
+}
+
+/* Estilos para tornar o carrossel responsivo */
+@media (max-width: 767px) {
+  .text-slider {
+    display: block;
+    /* ou a propriedade de exibição adequada */
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    color: black;
+    align-items: center;
+  }
+
+  button {
+    display: none;
+    margin: 0 1em;
+    background: linear-gradient(45deg, rgba(60, 163, 247, 0.5), rgba(60, 163, 247, 0.5));
+  }
+}

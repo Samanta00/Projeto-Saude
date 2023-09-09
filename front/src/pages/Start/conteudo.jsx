@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import './style.css';
-import Navbar from '../../component/NavBar';
-import ModalOptions from '../../component/NavBar/ModalOptions'
+import Navbar from './navbarStart/navStart';
+import SliderText from './slideshow/textSlide';
 
-import seta from './download.svg';
-import seloGarantia from './img/selo-garantia.svg';
-import desconto from './img/desconto.png'
-import clinicaParticulares from './img/clinica-particulares.png';
-import profissionalSaude from './img/profissionais-saude.png';
-import ongs from './img/ongs.png';
-import maletaMedico from './img/maleta-de-medico.png';
-import instituicoesSaude from './img/instituicoes-saude.png';
-import estudantePesquisadores from './img/estudantes-pesquisadores.png';
-import cuidadores from './img/cuidadores-50.png';
+import seta from '../../assets/img/download.svg';
+import seloGarantia from '../../assets/img/selo-garantia.svg';
+import desconto from '../../assets/img/desconto.png'
+import clinicaParticulares from '../../assets/img/clinica-particulares.png';
+import profissionalSaude from '../../assets/img/profissionais-saude.png';
+import ongs from '../../assets/img/ongs.png';
+import maletaMedico from '../../assets/img/maleta-de-medico.png';
+import instituicoesSaude from '../../assets/img/instituicoes-saude.png';
+import estudantePesquisadores from '../../assets/img/estudantes-pesquisadores.png';
+import cuidadores from '../../assets/img/cuidadores-50.png';
 
 const ConteudoStart = () => {
     return (
         <div className='landingPage'>
             <Navbar />
-            <ModalOptions />
 
             <section className='lp-inicio lp-sc-primario'>
                 <div className='lp-sc-primario__conteudo'>
@@ -77,6 +76,7 @@ const ConteudoStart = () => {
 
             <section className='lp-corpo lp-sc-vantagens'>
                 <div className='vantagens__corpo__centro'>
+                    <SliderText/>
 
                     <div className="vantagens__corpo">
                         <div className="card__vantagens">
@@ -109,7 +109,7 @@ const ConteudoStart = () => {
 
             <section className='container__titulo'>
                 <h2 className='lp-titulo-secundario'>
-                     Para obter mais ajuda
+                    Para obter mais ajuda
                 </h2>
             </section>
 
@@ -118,31 +118,31 @@ const ConteudoStart = () => {
                     <div className='lp-card-ajuda'>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={clinicaParticulares} alt="" />
-                            <h2 class='lp-titulo-secundario'>Clínicas particulares</h2>
+                            <h2 class='lp-titulo-secundario-card'>Clínicas particulares</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={cuidadores} alt="" />
-                            <h2 class='lp-titulo-secundario'>Pacientes e Cuidadores</h2>
+                            <h2 class='lp-titulo-secundario-card'>Pacientes e Cuidadores</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={profissionalSaude} alt="" />
-                            <h2 class='lp-titulo-secundario'>Profissionais de Saúde</h2>
+                            <h2 class='lp-titulo-secundario-card'>Profissionais de Saúde</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={estudantePesquisadores} alt="" />
-                            <h2 class='lp-titulo-secundario'>Estudantes e Pesquisadores</h2>
+                            <h2 class='lp-titulo-secundario-card'>Estudantes e Pesquisadores</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={ongs} alt="" />
-                            <h2 class='lp-titulo-secundario'>Ongs</h2>
+                            <h2 class='lp-titulo-secundario-card'>Ongs</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={instituicoesSaude} alt="" />
-                            <h2 class='lp-titulo-secundario'>instituições de Saúde</h2>
+                            <h2 class='lp-titulo-secundario-card'>instituições de Saúde</h2>
                         </div>
                         <div class='card__ajuda'>
                             <img className='card__ajuda-img' src={maletaMedico} alt="" />
-                            <h2 class='lp-titulo-secundario'>Governo e Órgãos de Saúde Pública</h2>
+                            <h2 class='lp-titulo-secundario-card'>Governo e Órgãos de Saúde Pública</h2>
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@ const ConteudoStart = () => {
                             </ul>
                         </div>
                     </div>
-                    <button className="buy-button__preco footer-button">Teste Agora</button>
+                    <button className="buy-button__preco ">Teste Agora</button>
                 </div>
             </section>
 
@@ -198,21 +198,30 @@ const ConteudoStart = () => {
 
             <footer className='rodape__lp'>
                 <p className='rodape__lp__texto'>Fale Conosco
-                    E-mail:
-                    contato@queirozodontologia.com.br
+                    <ul className='rodape__lista'>
+                        <li>
+                            E-mail:
+                            contato@queirozodontologia.com.br
+                        </li>
+
+                        <li>
+                            Telefone
+                            (81) 3461.3835
+                        </li>
+                        <li>
+                            WhatsApp
+                            (81) 99677-9647
+                        </li>
+                    </ul>
                 </p>
 
                 <p className='rodape__lp__texto'>
-                    Telefone
-                    (81) 3461.3835
-                </p>
-                <p className='rodape__lp__texto'>
-                    WhatsApp
-                    (81) 99677-9647
-                </p>
-                <p className='rodape__lp__texto'>
-                    Excelente localização
-                    Edifício Pontes Corporate Center, R. Barão de Souza Leão, 425 Salas 504/505 - Boa Viagem, Recife - PE
+                    Nossa localização
+                    <ul className='rodape__lista'>
+                        <li>
+                            Edifício Pontes Corporate Center, R. Barão de Souza Leão, 425 Salas 504/505 - Boa Viagem, Recife - PE
+                        </li>
+                    </ul>
                 </p>
 
                 <button className="buy-button__preco footer-button">Teste Agora</button>

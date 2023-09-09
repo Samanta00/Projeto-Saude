@@ -12,7 +12,7 @@ import PerguntasQuiz from '../../pages/Quiz/paginas/PerguntasQuiz';
 
 export const PublicRoutes = () => (
   <React.Fragment>
-    <Route path='/' element={<Start/>}/>
+    <Route path='/' element={<PagesHome/>}/>
     <Route path='/home' element={<PagesHome/>}/>
     <Route path='/agendamento' element={<Agenda/>}/>
     <Route path='/recomendacoes' element={<Recomendacoes/>}/>

@@ -1,18 +1,19 @@
-body { overflow-x: hidden; }
+body {
+    overflow-x: hidden;
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-
-.lp-inicio  {
+.lp-inicio {
     height: 100vh;
     display: grid;
     grid-template-columns: 50% 50%;
 }
 
-.lp-sc-primario__conteudo{
+.lp-sc-primario__conteudo {
     color: var(--branco);
     margin: 0 6em;
 }
@@ -25,7 +26,11 @@ body { overflow-x: hidden; }
     text-align: center;
 }
 
-.lp-sc-primario__botao  {
+.lp-sc-primario__titulo {
+    color: var(--branco);
+}
+
+.lp-sc-primario__botao {
     margin-bottom: 1em;
     color: var(--branco);
     background-color: var(--verde-claro);
@@ -39,12 +44,12 @@ body { overflow-x: hidden; }
     transition: 0.5s;
 }
 
-.botao_secundario  {
+.botao_secundario {
     background-color: transparent;
     border: 2px solid var(--branco);
 }
 
-.lp-sc-primario__botao:hover  {
+.lp-sc-primario__botao:hover {
     transform: scale(1.1);
     color: var(--verde-claro);
     background-color: var(--branco);
@@ -52,12 +57,12 @@ body { overflow-x: hidden; }
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 }
 
-.nossos-precos__seta{
+.nossos-precos__seta {
     margin: 0 500px 0 0;
 }
 
 .lp-corpo {
-    margin-top: 100px;
+    margin: 5em 0 10em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +85,7 @@ body { overflow-x: hidden; }
 
 .lp-card {
     width: 300px;
-    height: 350px;
+    min-height: 350px;
     background-color: var(--azure);
     border-radius: 10px;
     outline: 1px solid rgba(255, 255, 255, .5);
@@ -121,6 +126,10 @@ body { overflow-x: hidden; }
     max-height: 64px;
 }
 
+.lp-titulo-secundario-card {
+    font-size: 1.2em;
+}
+
 .lp-sc-ajuda {
     padding: 0 250px;
 }
@@ -142,10 +151,10 @@ body { overflow-x: hidden; }
 }
 
 .lp-tabela {
-    width: 40%;
+    width: 50%;
     background-color: var(--verde-claro);
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 .lp-tabela-precos {
@@ -162,6 +171,7 @@ body { overflow-x: hidden; }
     font-size: 12px;
     word-spacing: x 90px;
     transition: 0.5s;
+    justify-content: space-between;
 }
 
 .preco__plano:hover {
@@ -184,17 +194,26 @@ body { overflow-x: hidden; }
 
 .rodape__lp__texto {
     padding: 12px 0;
-    text-align: left;
+    text-align: center;
     margin: 10px 0 0 10px;
 }
 
+.rodape__lista {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 1em 0;
+    gap: 40px;
+}
+
 .buy-button__preco {
+    margin: 10px 0 5px 0;
     padding: 10px;
     border-radius: 5px;
     border: none;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
-    background-color: var(--verde-claro);
-    color: var(--branco);
+    background-color: var(--branco);
+    color: var(--verde-claro);
     transition: 0.5s;
 }
 
@@ -206,13 +225,24 @@ body { overflow-x: hidden; }
 }
 
 .footer-button {
+    font-size: 14px;
+    margin: 1em 0;
     background-color: var(--branco);
     color: var(--verde-claro);
-    margin: 20px 0;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
 
+    .lp-sc-primario__titulo,
+    .lp-sc-primario__texto{
+        color: black;
+        margin: 1em 0 1em 0;
+    }
+
+    .botao_secundario {
+        border: none;
+        background-color: var(--verde-claro);
+    }
 
     .landingPage {
         display: flex;
@@ -220,17 +250,16 @@ body { overflow-x: hidden; }
         overflow-x: hidden;
     }
 
-    .lp-inicio{
+    .lp-inicio {
         display: block;
         background-image: none;
         width: 50%;
-        
     }
 
     .lp-sc-primario {
         width: 100%;
     }
-    
+
     .container_titulo {
         width: 100%;
     }
@@ -261,7 +290,7 @@ body { overflow-x: hidden; }
         float: none;
     }
 
-    .card__ajuda-img{
+    .card__ajuda-img {
         float: none;
     }
 
@@ -270,36 +299,29 @@ body { overflow-x: hidden; }
     }
 }
 
-@media  (max-width: 767px){
-    .lp-inicio{
-        background-image: none;
-        width: 100%;
-        display: block;
- }
-
-    .lp-sc-primario {
-        width: 100%;
-    }
-    
-    .container_titulo {
-        width: 100%;
+@media (max-width: 767px) {
+    .rodape__lista {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5em 1em;
     }
 
-    .vantagens__corpo__centro {
-        width: 100%;
-        display: block;
-        font-size: 1em;
+    .nossos-precos__seta {
+        margin: 0;
     }
 
-    .card__vantagens {
-        width: 100%;
+    .vantagens__corpo {
+        display: none;
     }
 
-    .lp-sc-ajuda {
-        width: 100%;
-        display: block;
-        font-size: 1em;
-        padding: 0;
+    .lp-card,
+    .card__ajuda{
+        width: 90%;
+        left: 10px;
+    }
+
+    .lp-card:hover {
+        transform: none;
     }
 
 }

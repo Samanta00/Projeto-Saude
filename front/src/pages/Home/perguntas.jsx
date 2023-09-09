@@ -163,13 +163,13 @@ function Perguntas() {
                 data-tab="2"
                 role="tab"
                 aria-controls="elementor-tab-content-1982"
-                aria-expanded={activeTab === 2}
+                aria-expanded={activeTab === 3}
                 tabIndex="-1"
-                aria-selected={activeTab === 2}
-                onClick={(event) => handleTabClick(2, event)}
+                aria-selected={activeTab === 3}
+                onClick={(event) => handleTabClick(3, event)}
               >
                 <span
-                  className={`elementor-accordion-icon ${activeTab === 2
+                  className={`elementor-accordion-icon ${activeTab === 3
                     ? "elementor-accordion-icon-opened"
                     : "elementor-accordion-icon-closed"
                     }`}
@@ -180,15 +180,15 @@ function Perguntas() {
                   Título do Terceiro acordeão
                 </a>
               </div>
-              {activeTab === 2 && (
+              {activeTab === 3 && (
                 <div
                   id="elementor-tab-content-1982"
                   className={`elementor-tab-content elementor-clearfix ${activeTab === 2 ? "elementor-active" : ""
                     }`}
-                  data-tab="2"
+                  data-tab="3"
                   role="tabpanel"
                   aria-labelledby="elementor-tab-title-1982"
-                  style={{ display: activeTab === 2 ? "block" : "none" }}
+                  style={{ display: activeTab === 3 ? "block" : "none" }}
                 >
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus, voluptatibus nemo ad dolore vitae praesentium ipsa sapiente facere reprehenderit odit possimus accusantium maxime animi quia, error provident architecto eum!
