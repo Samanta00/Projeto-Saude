@@ -5,6 +5,13 @@ import aceno from "../../assets/img/acenando.jpg";
 import servicos from "../../assets/img/euu.jpeg";
 import woman from "../../assets/img/euu.jpeg";
 import clinica from "../../assets/img/clinica.png";
+import quiz from "../../assets/img/QUIZ.png"
+import agendamento from "../../assets/img/Agendamento.png"
+import resultados from "../../assets/img/Resultados.png"
+import imgfaixa from "../../assets/img/imagem_faixa.png"
+import perfil_1 from "../../assets/img/samanta_perfil.png"
+import perfil_2 from "../../assets/img/guerra_perfil.png"
+import perfil_3 from "../../assets/img/morgam_perfil.png"
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></link>
 
 function Perguntas() {
@@ -32,8 +39,13 @@ function Perguntas() {
   return (
     <div className="container__perguntas">
       <div className="womanTeste">
-
+      <h2 className="Creator">Ellen Samanta</h2>
       <img src={woman} className="womanphoto" alt="" />
+      <h2 className="Colab">Anderson Alves</h2>
+      <h2 className="Colab_2">Gabriel Guerra</h2>
+      <div className="desenvolvimento">
+        
+      </div>
         <h2 className="subtitulo-verde">Dúvidas</h2>
       </div>
 
@@ -211,7 +223,7 @@ function Perguntas() {
       <div className="component-wrapper">
         <div className="subcomponents-container">
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={quiz} className="servicos" alt="" />
             <h2>Quiz Educacional</h2>
             <h5>Quiz interativo com perguntas sobre hábitos que podem aumentar o risco de câncer bucal.</h5>
             <p>Como Funciona?</p>
@@ -220,7 +232,7 @@ function Perguntas() {
           </div>
 
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={agendamento} className="servicos" alt="" />
             <h2>Agendamento de Consulta</h2>
             <h5>Permitir que os usuários agendem consultas com profissionais de saúde especializados em câncer bucal.</h5>
             <p>Como Funciona?</p>
@@ -229,7 +241,7 @@ function Perguntas() {
           </div>
 
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={resultados} className="servicos" alt="" />
             <h2>Envio de Resultados Médicos</h2>
             <h5>Possibilitar o compartilhamento seguro de resultados médicos entre pacientes e profissionais de saúde.</h5>
             <p>Como Funciona?</p>
@@ -269,17 +281,24 @@ function Perguntas() {
 
       <div className="component-wrapper ">
         <div className=" component-especialista">
-          <div className="subcomponent subcomponent-especialista">
-            <img src={servicos} className="servicos" alt="" />
+          <div className="subcomponent_subcomponent-especialista">
+            <img src={perfil_1} className="servicos" alt="" />
             <h2>Ceo Fundador</h2>
-            <h1>Reynaldo Gianecchini</h1>
+            <h1>Ellen Samanta</h1>
           </div>
 
-          <div className="subcomponent subcomponent-especialista">
-            <img src={servicos} className="servicos" alt="" />
-            <h2>Ceo Fundador</h2>
-            <h1>Reynaldo Gianecchini</h1>
+          <div className="subcomponent_subcomponent-especialista">
+            <img src={perfil_2} className="servicos" alt="" />
+            <h2>Design UX/UI</h2>
+            <h1>Gabriel Guerra</h1>
           </div>
+
+          <div className="subcomponent_subcomponent-especialista">
+            <img src={perfil_3} className="servicos" alt="" />
+            <h2>Front-end developer</h2>
+            <h1>Anderson Alves</h1>
+          </div>
+
         </div>
 
       </div>
