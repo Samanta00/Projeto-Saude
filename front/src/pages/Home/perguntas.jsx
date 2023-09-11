@@ -39,10 +39,15 @@ function Perguntas() {
   return (
     <div className="container__perguntas">
       <div className="womanTeste">
-      <h2 className="Creator">Ellen Samanta</h2>
-      <img src={woman} className="womanphoto" alt="" />
-      <h2 className="Colab">Anderson Alves</h2>
-      <h2 className="Colab_2">Gabriel Guerra</h2>
+      <div className="faixa">
+        <div className="itensFaixa">
+          <h1>Aqui seu sorriso está em ótimas mãos!</h1>
+          <p>Profissional qualificado, materiais certificados e esterilização que segue todas as normas de biossegurança.</p>
+        </div>
+      </div>
+     
+     
+      
       <div className="desenvolvimento">
         
       </div>
@@ -53,8 +58,8 @@ function Perguntas() {
         <div className="container__perguntas-imagem">
           <img
             decoding="async"
-            width="800"
-            height="640"
+            width="57"
+            height="auto"
             src="https://queirozodontologia.com.br/wp-content/uploads/2023/05/2.png"
             className="attachment-large size-large"
             alt=""
@@ -253,12 +258,7 @@ function Perguntas() {
         <br /><br />
       </div>
 
-      <div className="faixa">
-        <div className="itensFaixa">
-          <h1>Aqui seu sorriso está em ótimas mãos!</h1>
-          <p>Profissional qualificado, materiais certificados e esterilização que segue todas as normas de biossegurança.</p>
-        </div>
-      </div>
+
 
       <section class="elementor-section elementor-inner-section elementor-element elementor-element-2541f58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2541f58" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default">
