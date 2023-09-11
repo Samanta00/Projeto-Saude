@@ -19,7 +19,7 @@ body {
 }
 
 .lp-sc-primario {
-    background-image: url('./Background.jpg');
+    background-image: url('./assets/Background.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
