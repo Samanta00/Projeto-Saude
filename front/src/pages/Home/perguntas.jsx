@@ -12,6 +12,9 @@ import imgfaixa from "../../assets/img/imagem_faixa.png"
 import perfil_1 from "../../assets/img/samanta_perfil.png"
 import perfil_2 from "../../assets/img/guerra_perfil.png"
 import perfil_3 from "../../assets/img/morgam_perfil.png"
+import recepcao from "../../assets/img/recepcao.png"
+import consultorio from "../../assets/img/consultorio.png"
+import profissionais from "../../assets/img/profissionais.png"
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"></link>
 
 function Perguntas() {
@@ -27,7 +30,7 @@ function Perguntas() {
     }
   };
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [woman, clinica, woman]; // Substitua com suas imagens
+  const images = [recepcao, consultorio, profissionais]; // Substitua com suas imagens
 
   const goToPreviousSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
