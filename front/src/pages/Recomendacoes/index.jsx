@@ -11,7 +11,6 @@ const Index = () => {
       <Navbar />
       <ModalOptions />
       <Conteudo/>
-
     </>
   );
 };
