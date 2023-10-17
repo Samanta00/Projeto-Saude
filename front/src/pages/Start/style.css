@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .lp-corpo {
-    margin: 5em 0 10em 0;
+    margin: 0 0 3em 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,9 +132,13 @@ body {
 
 .lp-sc-ajuda {
     padding: 0 250px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card__ajuda {
+    flex-grow: 1;
+    flex-basis: 200;
     width: 250px;
     height: 150px;
     background-color: var(--azure);
@@ -142,7 +146,6 @@ body {
     outline: 1px solid rgba(255, 255, 255, .5);
     outline-offset: -8px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
-    position: relative;
     overflow: hidden;
     grid-template-columns: 100px 100px 100px 100px;
     display: inline-block;
@@ -233,6 +236,7 @@ body {
 
 @media (max-width: 1200px) {
 
+
     .lp-sc-primario__titulo,
     .lp-sc-primario__texto{
         color: black;
@@ -247,7 +251,6 @@ body {
     .landingPage {
         display: flex;
         flex-direction: column;
-        overflow-x: hidden;
     }
 
     .lp-inicio {

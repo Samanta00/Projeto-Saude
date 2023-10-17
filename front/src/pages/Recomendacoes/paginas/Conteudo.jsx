@@ -45,6 +45,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A prática de exercícios físicos regulares durante o tratamento de câncer pode melhorar a qualidade de vida do paciente, aliviando alguns dos efeitos adversos dos medicamentos, além de fortalecer a imunidade e aumentar a disposição.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
             </section>
 
@@ -57,6 +58,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Medicina integrativa foca na mente, no estado de espírito e outras necessidades do paciente durante o tratamento de câncer para melhorar a sua qualidade de vida.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
                 <div>
                     <div ><img src={convivendoMedIntegrativa} className='conteudo-imagem'/></div>
@@ -73,6 +75,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Para o paciente com câncer, a nutrição adequada durante o tratamento é fundamental para manter o balanço do organismo, já que os efeitos colaterais de alguns medicamentos podem atrapalhar a aceitação e digestão de alimentos.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
             </section>
 
@@ -86,6 +89,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A cardio-oncologia trata do coração durante o tratamento do câncer para garantir que o órgão não seja afetado devido certas terapias oncológicas que podem causar efeitos colaterais..
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
                 <div ><img src={convivendoCardioOnco} className='conteudo-imagem'/></div>
             </section>
@@ -100,6 +104,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A odontologia no tratamento oncológico cuida dos danos na cavidade bucal ocasionados pelos efeitos adversos dos medicamentos no combate ao câncer.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
             </section>
 
@@ -112,6 +117,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         O tratamento de câncer pode causar dores da própria doença, mas também devido aos procedimentos e exames necessários para combatê-la. Entenda as medidas tomadas para que o paciente tenha mais qualidade de vida.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
                 <div ><img src={convivendoControle} className='conteudo-imagem'/></div>
             </section>
@@ -128,6 +134,7 @@ const Conteudo = () => {
                         Durante o tratamento oncológico, cuidar da saúde mental com especialistas é fundamental para a melhoria da qualidade de vida do paciente e seu enfrentamento da doença.
 
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
             </section>
 
@@ -140,6 +147,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A oncofertilidade tem como objetivo desenvolver e aplicar opções de tratamento para a preservação da fertilidade em jovens pacientes com câncer.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
                 <div ><img src={convivendoOncoFertilidade} className='conteudo-imagem'/></div>
             </section>
@@ -151,6 +159,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Bioética é a boa e eficiente comunicação entre as partes na medicina. Precisa unir conhecimento, habilidade e atitude, fatores essenciais para que as informações, dados e fatos estejam alinhados com a moral, a ética e a legalidade.
                     </p>
+                    <button className="buy-button__preco ">Saiba mais.</button>
                 </div>
             </section>
         </div>

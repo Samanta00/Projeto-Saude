@@ -30,11 +30,12 @@
 }
 
 .primeiro-conteudo {
-    background-image: url('../assets/verde-mobile.png');
+    background-position-y: top;
+    background-image: url('../assets/verde-mobile.png') ;
     min-height: 100vh;
     min-width: 100vw;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 60%;
     /* Esta configuração distorcerá a imagem para preencher a tela */
     background-position: center;
     /* Centraliza a imagem */
@@ -65,7 +66,7 @@
 }
 
 .container__cancer {
-    width: 100%;
+    width: 70%;
     height: 400px;
     border-radius: 10px;
     background-image: url(../assets/banner_prevencao-ao-cancer.jpg);

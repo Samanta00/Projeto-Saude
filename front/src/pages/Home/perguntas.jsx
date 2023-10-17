@@ -39,6 +39,7 @@ function Perguntas() {
   const goToNextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
   };
+
   return (
     <div className="container__perguntas">
       <div className="womanTeste">
@@ -112,7 +113,7 @@ function Perguntas() {
               aria-labelledby="elementor-tab-title-1981"
               style={{ display: activeTab === 1 ? "block" : "none" }}
             >
-              <p>
+              <p className="tag-card-perguntas-color">
                 Na Plataforma do Sistema de Software existem alguns cuidados
                 especiais pensados em você, uns deles é o calendário de
                 medicamentos assim que você agendar os dias para seus remedios

@@ -18,7 +18,6 @@ const ConteudoStart = () => {
     return (
         <div className='landingPage'>
             <Navbar />
-
             <section className='lp-inicio lp-sc-primario'>
                 <div className='lp-sc-primario__conteudo'>
                     <h1 className='lp-sc-primario__titulo'>
@@ -67,13 +66,11 @@ const ConteudoStart = () => {
                 </div>
             </section>
 
-
             <section className='container__titulo'>
-                <h2 className='lp-titulo-secundario'>
+                <h2 className='lp-titulo-secundario '>
                     Nossas vantagens
                 </h2>
             </section>
-
             <section className='lp-corpo lp-sc-vantagens'>
                 <div className='vantagens__corpo__centro'>
                     <SliderText/>
@@ -113,7 +110,7 @@ const ConteudoStart = () => {
                 </h2>
             </section>
 
-            <section className='lp-corpo lp-sc-ajuda'>
+            <section className='lp-corpo lp-sc-ajuda '>
                 <div className='lp-corpo_centro'>
                     <div className='lp-card-ajuda'>
                         <div class='card__ajuda'>
@@ -150,7 +147,7 @@ const ConteudoStart = () => {
 
             <section className='container__titulo'>
                 <h2 className='lp-titulo-secundario'>
-                    Nosses Preços
+                    Nossos Preços
                 </h2>
             </section>
 
@@ -186,7 +183,6 @@ const ConteudoStart = () => {
                     <button className="buy-button__preco ">Teste Agora</button>
                 </div>
             </section>
-
 
             <section className='container__titulo'>
                 <h2 className='lp-titulo-secundario'>

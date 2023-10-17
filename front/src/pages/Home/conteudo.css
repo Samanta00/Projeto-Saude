@@ -200,12 +200,12 @@ h4 {
   display: flex;
   align-content: center;
   align-items: center;
-  margin-top: 20px; /* Espaçamento superior para separar das perguntas anteriores */
+  margin-top: 0px; /* Espaçamento superior para separar das perguntas anteriores */
   gap: 50px;
 }
 
 .container__perguntas-imagem img {
-  width: 58%; /* Ajuste a largura da imagem conforme necessário */
+  width: 78%; /* Ajuste a largura da imagem conforme necessário */
   height: auto;
   border-radius: 60px;
 }
@@ -283,6 +283,9 @@ h4 {
   letter-spacing: 0.3px;
 }
 
+.tag-card-perguntas-color {
+  background-color: var(--azure);
+}
 .component-wrapper {
   /* Estilos para o wrapper principal, se necessário */
 }
@@ -371,21 +374,20 @@ h4 {
   background-image: url(../../assets/img/imagem_faixa.png);
   background-position: center;
   background-size: cover;
-  opacity: 0.5;
 }
 
 .itensFaixa H1{
   text-align: center;
   max-width: 600px; /* Largura máxima dos elementos */
   margin: 0 auto; /* Centralizar horizontalmente */
-  color: #1ED9B8;
+  color: #ffffff;
 }
 
 .itensFaixa P{
   text-align: center;
   max-width: 600px; /* Largura máxima dos elementos */
   margin: 0 auto; /* Centralizar horizontalmente */
-  color: #1ED9B8;
+  color: #ffffff;
 }
 
 .elementor-88 .elementor-element.elementor-element-1eb0b005 > .elementor-element-populated {
