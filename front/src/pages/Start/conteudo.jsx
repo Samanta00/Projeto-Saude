@@ -21,57 +21,65 @@ const ConteudoStart = () => {
             <section className='lp-inicio lp-sc-primario'>
                 <div className='lp-sc-primario__conteudo'>
                     <h1 className='lp-sc-primario__titulo'>
-                        BucalGuardian: Plataforma de Gerenciamento e Cuidado do Câncer Bucal
+                         BucalGuardian: Plataforma de Gerenciamento e Cuidado do Câncer Bucal
                     </h1>
                     <p className='lp-sc-primario__texto'>
                         Pelo menos 97% eficaz, até 30x mais rápido em resultados Médicos
                     </p>
-                    <a className="lp-sc-primario__botao" href="aa">Assine</a>
+                    <a className="lp-sc-primario__botao" href="#lp-sc-card">Assine</a>
 
-                    <a className="lp-sc-primario__botao botao_secundario" href="aa">Preço</a>
+                    <a className="lp-sc-primario__botao botao_secundario" href="#row-tabela-preco">Preço</a>
 
                     <a className='nossos-precos__seta' href='#row-tabela-preco'><img src={seta} alt="seta" />Preços</a>
                 </div>
             </section>
 
-            <section className='container__titulo'>
-                <h2 className='lp-titulo-secundario'>
-                    Por que estamos sendo escolhidos
-                </h2>
-            </section>
-
             <section className='lp-corpo lp-sc-card'>
+
+            <h2 className='lp-titulo-secundario'>
+                    Nossos Pacotes
+                </h2>
 
                 <div className='lp-corpo_centro'>
                     <div className="lp-corpo__card">
                         <div className="lp-card">
-                            <h3>Oferta 1</h3>
-                            <p>Descrição da Oferta 1.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorem sunt repellat velit sapiente tempora? Distinctio qui architecto maxime, asperiores fugit obcaecati nihil adipisci voluptate blanditiis eius, dignissimos deserunt commodi?
-                            </p>
+                            <h3>Pacote Essencial</h3>
+                            <h4>Explorando Fundamentos</h4>
+                            <b>O que inclui:</b>
+                            <ul>
+                            <li>Acesso exclusivo a artigos informativos sobre prevenção e detecção precoce.</li>
+                            <li>Vídeos educativos com especialistas em saúde bucal.</li>
+                            <li>Notificações personalizadas sobre eventos e campanhas de conscientização.</li>
+                            </ul>
                         </div>
                         <div className="lp-card">
-                            <h3>Oferta 2</h3>
-                            <p>Descrição da Oferta 2.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolores, similique voluptatibus repudiandae aspernatur magnam repellendus a odit tenetur. Dolorum neque dolorem recusandae libero quisquam atque laborum reprehenderit inventore! Voluptatem.
-                            </p>
+                        <h3>Pacote Avançado</h3>
+                            <h4>Aprofundando-se na Jornada</h4>
+                            <b>O que inclui:</b>
+                            <ul>
+                            <li>Webinars exclusivos com profissionais da área médica.</li>
+                            <li>E-books abrangentes sobre tratamentos inovadores.</li>
+                            <li>Fóruns de discussão moderados por especialistas.</li>
+                            </ul>
                         </div>
                         <div className="lp-card">
-                            <h3>Oferta 3</h3>
-                            <p>Descrição da Oferta 3.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia perspiciatis illo totam sequi explicabo veniam magni consectetur quas, cumque atque ratione nulla voluptas modi ducimus adipisci quae temporibus? Itaque, consequatur!
-                            </p>
+                        <h3>Pacote Premium</h3>
+                            <h4>Personalizando sua Experiência</h4>
+                            <b>O que inclui:</b>
+                            <ul>
+                            <li>Consultas online com especialistas em câncer bucal.</li>
+                            <li>Relatórios personalizados sobre os últimos avanços na pesquisa.</li>
+                            <li>Acesso prioritário a eventos presenciais e workshops exclusivos.</li>
+                            </ul>   
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className='container__titulo'>
-                <h2 className='lp-titulo-secundario '>
+            <section className='lp-corpo lp-sc-vantagens'>
+            <h2 className='lp-titulo-terciario'>
                     Nossas vantagens
                 </h2>
-            </section>
-            <section className='lp-corpo lp-sc-vantagens'>
                 <div className='vantagens__corpo__centro'>
                     <SliderText/>
 
@@ -79,15 +87,20 @@ const ConteudoStart = () => {
                         <div className="card__vantagens">
                             <img className='card__vantagens_img' src={desconto} alt='desconto' />
                             <h3>Até 2-3x mais barato que os serviços de reconhecimento manual</h3>
-                            <p>Nenhuma pessoa está envolvida na resolução de captchas.<br />Graças a isso, fornecemos o preço mais baixo do mercado.</p>
+                            <p><b>Vantagens:</b>
+                            Base sólida de conhecimento para entender os riscos e práticas preventivas.
+Compreensão aprofundada dos sinais precoces de câncer bucal.
+Engajamento constante com a comunidade por meio de eventos e campanhas.</p>
                         </div>
                     </div>
                     <div className="vantagens__corpo">
                         <div className="card__vantagens">
                             <img className='card__vantagens_img' src={desconto} alt='desconto' />
                             <h3>Oferta 1</h3>
-                            <p>Descrição da Oferta 1.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque et asperiores optio magnam officiis eaque inventore, perferendis nulla cum fuga quis quisquam ducimus commodi impedit dicta aliquam est maiores numquam.
+                            <p><b>Vantagens:</b>
+Interação direta com especialistas para esclarecer dúvidas.
+Conteúdo detalhado sobre opções de tratamento e avanços na pesquisa.
+Participação ativa em discussões significativas com outros membros.
                             </p>
                         </div>
                     </div>
@@ -95,8 +108,10 @@ const ConteudoStart = () => {
                         <div className="card__vantagens">
                             <img className='card__vantagens_img' src={desconto} alt='desconto' />
                             <h3>Oferta 1</h3>
-                            <p>Descrição da Oferta 1.
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem harum nobis suscipit, rem excepturi commodi autem officiis ex illum labore nesciunt libero illo, molestiae reiciendis, asperiores nemo quae nulla. Sed.
+                            <p><b>Vantagens:</b>
+Orientação personalizada para questões específicas relacionadas ao câncer bucal.
+Informações em primeira mão sobre descobertas recentes na área.
+Participação VIP em eventos para construir uma rede de apoio.
                             </p>
                         </div>
                     </div>
@@ -104,13 +119,10 @@ const ConteudoStart = () => {
                 </div>
             </section>
 
-            <section className='container__titulo'>
-                <h2 className='lp-titulo-secundario'>
+            <section className='lp-corpo lp-sc-ajuda '>
+            <h2 className='lp-titulo-secundario'>
                     Para obter mais ajuda
                 </h2>
-            </section>
-
-            <section className='lp-corpo lp-sc-ajuda '>
                 <div className='lp-corpo_centro'>
                     <div className='lp-card-ajuda'>
                         <div class='card__ajuda'>
@@ -145,13 +157,10 @@ const ConteudoStart = () => {
                 </div>
             </section>
 
-            <section className='container__titulo'>
-                <h2 className='lp-titulo-secundario'>
+            <section className='lp-corpo lp-sc-precos'>
+            <h2 className='lp-titulo-terciario'>
                     Nossos Preços
                 </h2>
-            </section>
-
-            <section className='lp-corpo lp-sc-precos'>
                 <div className='lp-tabela'>
 
                     <div id='row-tabela-preco' className="lp-tabela-precos">

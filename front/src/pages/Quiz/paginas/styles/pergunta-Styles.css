@@ -1,3 +1,7 @@
+.background{
+  background: url(C:\Users\GUERRAGGA\Documents\GitHub\Projeto-Saude\front\src\assets\img\Background__Quiz.png);
+}
+
 .opcoesBox {
   width: 500px;
   min-height: 200px;
@@ -66,11 +70,11 @@
 }
 
 .contagemPerguntas .contagem {
-  color: blue;
+  color: #0b95bd;
 }
 
 .grupoResposta {
-  background-color: #224fc2;
+  background-color: #0DB3E3;
   width: 200px;
   height: 100px;
   display: flex;
@@ -80,7 +84,6 @@
   text-align: center;
   padding: 6px;
   border-radius: 8px;
-  border: 1px solid #3E2F5B;
   cursor: pointer;
 }
 
@@ -117,9 +120,9 @@
 }
 
 .grupoResposta:hover {
-  background-color: #3E2F5B;
+  background-color: #0b95bd;
 }
 
 .botao:hover {
-  background-color: #3E2F5B;
+  background-color: #0b95bd;
 }

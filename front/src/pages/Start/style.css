@@ -1,33 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
 
-*{
-    margin: 0;
-    padding: 0;
+section{
+    height: 75vh;
 }
 
 .lp-inicio {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-.lp-sc-primario__conteudo {
-    color: var(--branco);
-    margin: 0 6em;
+    display: flex;
 }
 
 .lp-sc-primario {
     background-image: url('./assets/Background.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     align-items: center;
     text-align: center;
 }
 
+.lp-sc-primario__conteudo {
+    color: var(--branco);
+    margin: 0 6em;
+    width: 40%;
+}
+
 .lp-sc-primario__titulo {
     color: var(--branco);
+    font-size: 40px;
 }
 
 .lp-sc-primario__botao {
@@ -58,16 +64,33 @@ body {
 }
 
 .nossos-precos__seta {
+    font-size: 18px;
+    font-weight: 500;
     margin: 0 500px 0 0;
+    color: var(--branco);
+}
+
+.nossos-precos__seta img{
+    height: 18px;
 }
 
 .lp-corpo {
-    margin: 0 0 3em 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
+}
+
+.lp-sc-card{
+    background-color: var(--branco);
+    height: 100%;
+    padding: 45px;
+}
+
+.lp-titulo-secundario{
+    font-size: 40px;
+    color: var(--verde-claro);
 }
 
 .container_titulo {
@@ -84,9 +107,11 @@ body {
 }
 
 .lp-card {
-    width: 300px;
+    width: 350px;
     min-height: 350px;
+    height: 100%;
     background-color: var(--azure);
+    border: 2.5px solid var(--verde-claro);
     border-radius: 10px;
     outline: 1px solid rgba(255, 255, 255, .5);
     outline-offset: -8px;
@@ -99,9 +124,30 @@ body {
     padding: 15px;
     transition: 0.5s;
 }
+.lp-card h3{
+    font-size: 25px;
+}
+
+.lp-card h4{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lp-card li{
+    margin: 25px;
+}
 
 .lp-card:hover {
     transform: scale(1.1);
+}
+
+.lp-sc-vantagens{
+    background-color: var(--verde-claro);
+}
+
+.lp-titulo-terciario {
+    color: var(--branco);
+    font-size: 40px;
 }
 
 .vantagens__corpo__centro {
@@ -131,6 +177,7 @@ body {
 }
 
 .lp-sc-ajuda {
+    background: var(--azure);
     padding: 0 250px;
     display: flex;
     flex-wrap: wrap;
@@ -151,6 +198,10 @@ body {
     display: inline-block;
     margin: 0 20px 0 0;
     padding: 15px;
+}
+
+.lp-sc-precos{
+    background: var(--verde-claro);
 }
 
 .lp-tabela {

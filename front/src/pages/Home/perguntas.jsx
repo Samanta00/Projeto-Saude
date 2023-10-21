@@ -263,7 +263,6 @@ function Perguntas() {
       </div>
 
 
-
       <section class="elementor-section elementor-inner-section elementor-element elementor-element-2541f58 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2541f58" data-element_type="section">
         <div class="elementor-container elementor-column-gap-default">
           <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-bb57f32" data-id="bb57f32" data-element_type="column">
@@ -306,7 +305,9 @@ function Perguntas() {
         </div>
 
       </div>
-                
+      <div className="consultorio">
+        <h2>CONHEÇA NOSSO CONSULTÓRIO</h2>
+      </div>
       <Carousel images={images} />
 
       <div className="entreEmContato">

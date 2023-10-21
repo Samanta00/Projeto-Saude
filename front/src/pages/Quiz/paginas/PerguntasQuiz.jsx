@@ -47,6 +47,7 @@ export default function PerguntasQuiz() {
           >Resetar</button>
         </div>
       ) : (
+        <div className="background">
         <Container>
           <div className="infoPerguntas">
             <div className="contagemPerguntas">
@@ -77,6 +78,7 @@ export default function PerguntasQuiz() {
             </div>
           </div>
         </Container>
+        </div>
       )}
     </>
   );
