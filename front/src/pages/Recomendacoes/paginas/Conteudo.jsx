@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/conteudo.css'
 import casal from '../assets/tudo-sobre-cancer_convivendo_608x368-1.jpg'
 import convivendoNutricao from '../assets/convivendo-com-cancer_nutricao.jpg'
@@ -10,6 +11,7 @@ import convivendoMedIntegrativa from '../assets/convivendo-com-cancer_med-integr
 import convivendoOdonto from '../assets/convivendo-com-cancer_odonto.jpg'
 import convivendoOncoFertilidade from '../assets/convivendo-com-cancer_oncofertilidade.jpg'
 import convivendoSaudeMental from '../assets/convivendo-com-cancer_saude-mental.jpg'
+
 
 const Conteudo = () => {
     return (
@@ -45,7 +47,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A prática de exercícios físicos regulares durante o tratamento de câncer pode melhorar a qualidade de vida do paciente, aliviando alguns dos efeitos adversos dos medicamentos, além de fortalecer a imunidade e aumentar a disposição.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco " ><Link to="/Exercicios">Saiba mais.</Link></button>
                 </div>
             </section>
 
@@ -54,11 +56,11 @@ const Conteudo = () => {
                     <h2 className='subtitulo-conteudo-principal conteudo-subtitulo-section'>
                         Medicina Integrativa
                     </h2>
-                    <h1 className='conteudo-titulo-principal conteudo-titulo-section'>Exercícios Físicos</h1>
+                    <h1 className='conteudo-titulo-principal conteudo-titulo-section'>Medicina Integrativa</h1>
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Medicina integrativa foca na mente, no estado de espírito e outras necessidades do paciente durante o tratamento de câncer para melhorar a sua qualidade de vida.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/MedicinaIntegrada">Saiba mais.</Link></button>
                 </div>
                 <div>
                     <div ><img src={convivendoMedIntegrativa} className='conteudo-imagem'/></div>
@@ -75,7 +77,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Para o paciente com câncer, a nutrição adequada durante o tratamento é fundamental para manter o balanço do organismo, já que os efeitos colaterais de alguns medicamentos podem atrapalhar a aceitação e digestão de alimentos.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/Nutricao">Saiba mais.</Link></button>
                 </div>
             </section>
 
@@ -89,7 +91,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A cardio-oncologia trata do coração durante o tratamento do câncer para garantir que o órgão não seja afetado devido certas terapias oncológicas que podem causar efeitos colaterais..
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/CardioOncologia">Saiba mais.</Link></button>
                 </div>
                 <div ><img src={convivendoCardioOnco} className='conteudo-imagem'/></div>
             </section>
@@ -104,7 +106,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A odontologia no tratamento oncológico cuida dos danos na cavidade bucal ocasionados pelos efeitos adversos dos medicamentos no combate ao câncer.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/Odontologia">Saiba mais.</Link></button>
                 </div>
             </section>
 
@@ -117,7 +119,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         O tratamento de câncer pode causar dores da própria doença, mas também devido aos procedimentos e exames necessários para combatê-la. Entenda as medidas tomadas para que o paciente tenha mais qualidade de vida.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/ControleDeDor">Saiba mais.</Link></button>
                 </div>
                 <div ><img src={convivendoControle} className='conteudo-imagem'/></div>
             </section>
@@ -129,12 +131,12 @@ const Conteudo = () => {
                     <h2 className='subtitulo-conteudo-principal conteudo-subtitulo-section'>
                         Convivendo com o Câncer
                     </h2>
-                    <h1 className='conteudo-titulo-principal conteudo-titulo-section'>Saúde Mental</h1>
+                    <h1 className='conteudo-titulo-principal conteudo-titulo-section'>Oncologico</h1>
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Durante o tratamento oncológico, cuidar da saúde mental com especialistas é fundamental para a melhoria da qualidade de vida do paciente e seu enfrentamento da doença.
 
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/SaudeMental">Saiba mais.</Link></button>
                 </div>
             </section>
 
@@ -147,7 +149,7 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         A oncofertilidade tem como objetivo desenvolver e aplicar opções de tratamento para a preservação da fertilidade em jovens pacientes com câncer.
                     </p>
-                    <button className="buy-button__preco ">Saiba mais.</button>
+                    <button className="buy-button__preco "><Link to="/Exercicios">Saiba mais.</Link></button>
                 </div>
                 <div ><img src={convivendoOncoFertilidade} className='conteudo-imagem'/></div>
             </section>
@@ -160,6 +162,9 @@ const Conteudo = () => {
                         Bioética é a boa e eficiente comunicação entre as partes na medicina. Precisa unir conhecimento, habilidade e atitude, fatores essenciais para que as informações, dados e fatos estejam alinhados com a moral, a ética e a legalidade.
                     </p>
                     <button className="buy-button__preco">Saiba mais.</button>
+
+                    <button className="buy-button__preco "><Link to="/Bioetica">Saiba mais.</Link></button>
+
                 </div>
             </section>
         </div>
