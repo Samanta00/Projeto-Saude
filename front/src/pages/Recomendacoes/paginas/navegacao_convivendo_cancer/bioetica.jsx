@@ -1,18 +1,33 @@
 import React from 'react';
+import './style.css';
+import convivendoBioetica from './assets/thumbnail-1-1.png';
+import seta from './assets/arrow.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
+
 
 const Bioetica = () => {
     return (
         <div>
             <section className='banner-bioetica'>
-                <a href="#">Convivendo com o Cancer</a>
+                <a> <img src={seta} alt=''></img>Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__bioetica'>Nossos serviços</h2>
                 <h1 className='titulo__bioetica'>Bioética</h1>
                 <p className='paragrafo__bioetica' >Bioética é a boa e eficiente comunicação entre as partes na medicina. Precisa unir conhecimento, habilidade e atitude, fatores essenciais para que as informações, dados e fatos estejam alinhados com a moral, a ética e a legalidade. Saiba mais.</p>
-                <img src="" alt="" />
+                </div>
+                
+                <img src={convivendoBioetica} alt="" />
             </section>
-
+            
             <section className='conteudo-bioetica'>
 
+            <div className="just__space"></div>
+
+            <div className='conteudo'>
                 <p className='paragrafo__bioetica'>A comunicação é uma competência que muda a percepção de uma situação para melhor (a boa notícia, que afasta um diagnóstico preocupante) ou para pior (a má notícia, que conscientiza sobre a crueldade de uma doença e as consequentes mudanças transitórias ou definitivas na qualidade de vida, incluindo ideias de aceleração em direção ao final de vida).</p>
 
                 <p className='paragrafo__bioetica'>Conhecimento, habilidade e atitude – os três atributos da competência – são essenciais para que a emissão e a recepção de informações, dados e fatos de modo dialógico estejam alinhados com a moral, a ética e a legalidade. A tríade no campo da comunicação fortalece o termo conexão médico-paciente, fundamentalmente pelo sentido de respeito mútuo, a saber, respeito a si mesmo e ao outro e que admite capacidades de entrega e de acolhimento.</p>
@@ -60,6 +75,24 @@ const Bioetica = () => {
 
                 <p className='paragrafo__bioetica'>Primo e Garrafa, por sua análise do efeito da palavra sobre o que já aconteceu e sobre o que poderá acontecer em um grupo de pacientes com doença oncológica passível de impacção sobre a identidade feminina, trazem dados proveitosos para a construção da excelência em comunicação perante doença oncológica. É uma contribuição bem-vinda à harmonia do trinômio Ciência-Educação-Ser humano.</p>
 
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+                
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            
             </section>
 
         </div>

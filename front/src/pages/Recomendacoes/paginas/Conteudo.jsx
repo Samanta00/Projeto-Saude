@@ -161,7 +161,6 @@ const Conteudo = () => {
                     <p className='paragrafo-conteudo-texto-principal conteudo-paragrafo-section'>
                         Bioética é a boa e eficiente comunicação entre as partes na medicina. Precisa unir conhecimento, habilidade e atitude, fatores essenciais para que as informações, dados e fatos estejam alinhados com a moral, a ética e a legalidade.
                     </p>
-                    <button className="buy-button__preco">Saiba mais.</button>
 
                     <button className="buy-button__preco "><Link to="/Bioetica">Saiba mais.</Link></button>
 
