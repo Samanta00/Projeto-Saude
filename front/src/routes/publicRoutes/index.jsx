@@ -14,7 +14,7 @@ export const PublicRoutes = () => (
   <React.Fragment>
      <Route path='/start' element={<Start/>}/>
     <Route path='/home' element={<PagesHome/>}/>
-    <Route path='/' element={<Recomendacoes/>}/>
+    <Route path='/recomendacoes' element={<Recomendacoes/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/agendamento' element={<Agenda/>}/>
     <Route path='/resultados' element={<Resultados/>}/>

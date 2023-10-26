@@ -28,12 +28,12 @@ section{
 .lp-sc-primario__conteudo {
     color: var(--branco);
     margin: 0 6em;
-    width: 40%;
+    width: 30%;
 }
 
 .lp-sc-primario__titulo {
     color: var(--branco);
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .lp-sc-primario__botao {
@@ -43,6 +43,8 @@ section{
     border-radius: 8px;
     padding: 1em;
     display: block;
+    height: 50px;
+    align-items: center;
     cursor: pointer;
     font-family: var(--fonte-principal);
     font-weight: 700;
@@ -66,7 +68,6 @@ section{
 .nossos-precos__seta {
     font-size: 18px;
     font-weight: 500;
-    margin: 0 500px 0 0;
     color: var(--branco);
 }
 
@@ -86,11 +87,13 @@ section{
     background-color: var(--branco);
     height: 100%;
     padding: 45px;
+    padding-bottom: 80px;
 }
 
 .lp-titulo-secundario{
     font-size: 40px;
     color: var(--verde-claro);
+    padding-bottom: 40px;
 }
 
 .container_titulo {
@@ -124,6 +127,13 @@ section{
     padding: 15px;
     transition: 0.5s;
 }
+
+.lp-card img{
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .lp-card h3{
     font-size: 25px;
 }
@@ -143,26 +153,49 @@ section{
 
 .lp-sc-vantagens{
     background-color: var(--verde-claro);
+    height: 80vh;
+    display: flex;
+    height: 100%;
 }
 
 .lp-titulo-terciario {
     color: var(--branco);
     font-size: 40px;
+    margin-top: 40px;
 }
 
 .vantagens__corpo__centro {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    text-align: center;
+    text-align: left;
+}
+
+.vantagens__corpo{
+    color: white;
+    display: flex;
+    padding: 10px;
 }
 
 .card__vantagens {
-    margin: 20px;
-    width: 850px;
-    overflow: hidden;
-    display: inline-block;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 20px 0 0;
     padding: 15px;
+    padding-bottom: 30px;
+}
+
+.card__vantagens a{
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 18%;
 }
 
 .card__vantagens_img {
@@ -178,9 +211,9 @@ section{
 
 .lp-sc-ajuda {
     background: var(--azure);
-    padding: 0 250px;
+    padding: 0 200px;
     display: flex;
-    flex-wrap: wrap;
+    height: 80vh;
 }
 
 .card__ajuda {
@@ -189,6 +222,7 @@ section{
     width: 250px;
     height: 150px;
     background-color: var(--azure);
+    border: 2px solid var(--verde-claro);
     border-radius: 10px;
     outline: 1px solid rgba(255, 255, 255, .5);
     outline-offset: -8px;
@@ -198,6 +232,11 @@ section{
     display: inline-block;
     margin: 0 20px 0 0;
     padding: 15px;
+    transition: 0.5s;
+}
+
+.card__ajuda:hover{
+    transform: scale(1.1);
 }
 
 .lp-sc-precos{
@@ -209,19 +248,25 @@ section{
     background-color: var(--verde-claro);
     border-radius: 8px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lp-tabela-precos {
     background-color: aliceblue;
     padding: 8px;
     box-sizing: border-box;
+    border-radius: 10px;
+    width: 700px;
+    height: 200px;
 }
 
 .preco__plano {
-    gap: 70px;
+    gap: 90px;
     display: flex;
     align-items: center;
-    margin: 0em 1em 2em 0;
+    margin: 10px;
     font-size: 12px;
     word-spacing: x 90px;
     transition: 0.5s;
