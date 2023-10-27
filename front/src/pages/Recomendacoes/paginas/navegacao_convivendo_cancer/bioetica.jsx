@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 import convivendoBioetica from './assets/thumbnail-1-1.png';
-import seta from './assets/arrow.svg';
+import seta from './assets/arrow-left-solid.svg';
 import facebook from './assets/facebook-f.svg';
 import twitter from './assets/twitter.svg';
 import linkedin from './assets/linkedin-in.svg';
@@ -13,7 +13,8 @@ const Bioetica = () => {
     return (
         <div>
             <section className='banner-bioetica'>
-                <a> <img src={seta} alt=''></img>Convivendo com o Cancer</a>
+            <img className='seta' src={seta} alt=''></img>
+                <a>Convivendo com o Cancer</a>
                 <div className="main-content">
                 <h2 className='subtitulo__bioetica'>Nossos serviços</h2>
                 <h1 className='titulo__bioetica'>Bioética</h1>

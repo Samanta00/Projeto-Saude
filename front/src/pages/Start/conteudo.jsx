@@ -13,6 +13,9 @@ import maletaMedico from '../../assets/img/maleta-de-medico.png';
 import instituicoesSaude from '../../assets/img/instituicoes-saude.png';
 import estudantePesquisadores from '../../assets/img/estudantes-pesquisadores.png';
 import cuidadores from '../../assets/img/cuidadores-50.png';
+import basico from './assets/house-medical-flag-solid.svg';
+import avancado from './assets/hospital-user-solid.svg';
+import premium from './assets/hospital-solid.svg';
 
 const ConteudoStart = () => {
     return (
@@ -43,6 +46,7 @@ const ConteudoStart = () => {
                 <div className='lp-corpo_centro'>
                     <div className="lp-corpo__card">
                         <div className="lp-card">
+                            <a href="#"><img src={basico}></img></a>
                             <h3>Pacote Essencial</h3>
                             <h4>Explorando Fundamentos</h4>
                             <b>O que inclui:</b>
@@ -53,6 +57,7 @@ const ConteudoStart = () => {
                             </ul>
                         </div>
                         <div className="lp-card">
+                        <a href="#"><img src={avancado}></img></a>
                         <h3>Pacote Avançado</h3>
                             <h4>Aprofundando-se na Jornada</h4>
                             <b>O que inclui:</b>
@@ -63,6 +68,7 @@ const ConteudoStart = () => {
                             </ul>
                         </div>
                         <div className="lp-card">
+                        <a href="#"><img src={premium}></img></a>
                         <h3>Pacote Premium</h3>
                             <h4>Personalizando sua Experiência</h4>
                             <b>O que inclui:</b>
@@ -85,33 +91,40 @@ const ConteudoStart = () => {
 
                     <div className="vantagens__corpo">
                         <div className="card__vantagens">
-                            <img className='card__vantagens_img' src={desconto} alt='desconto' />
-                            <h3>Até 2-3x mais barato que os serviços de reconhecimento manual</h3>
+                            <a href="#"><img className='card__vantagens_img' src={basico} alt='desconto' /></a>
+                            <h3>Pacote Básico</h3>
                             <p><b>Vantagens:</b>
-                            Base sólida de conhecimento para entender os riscos e práticas preventivas.
-Compreensão aprofundada dos sinais precoces de câncer bucal.
-Engajamento constante com a comunidade por meio de eventos e campanhas.</p>
-                        </div>
-                    </div>
-                    <div className="vantagens__corpo">
-                        <div className="card__vantagens">
-                            <img className='card__vantagens_img' src={desconto} alt='desconto' />
-                            <h3>Oferta 1</h3>
-                            <p><b>Vantagens:</b>
-Interação direta com especialistas para esclarecer dúvidas.
-Conteúdo detalhado sobre opções de tratamento e avanços na pesquisa.
-Participação ativa em discussões significativas com outros membros.
+                            <ul>
+                                <li>Base sólida de conhecimento para entender os riscos e práticas preventivas.</li>
+                                <li>Compreensão aprofundada dos sinais precoces de câncer bucal.</li>
+                                <li>Engajamento constante com a comunidade por meio de eventos e campanhas.</li>
+                            </ul>
                             </p>
                         </div>
                     </div>
                     <div className="vantagens__corpo">
                         <div className="card__vantagens">
-                            <img className='card__vantagens_img' src={desconto} alt='desconto' />
-                            <h3>Oferta 1</h3>
+                           <a href="#"><img className='card__vantagens_img' src={avancado} alt='desconto' /></a>
+                            <h3>Pacote Avançado</h3>
                             <p><b>Vantagens:</b>
-Orientação personalizada para questões específicas relacionadas ao câncer bucal.
-Informações em primeira mão sobre descobertas recentes na área.
-Participação VIP em eventos para construir uma rede de apoio.
+                            <ul>
+                                <li>Interação direta com especialistas para esclarecer dúvidas.</li>
+                                <li>Conteúdo detalhado sobre opções de tratamento e avanços na pesquisa.</li>
+                                <li>Participação ativa em discussões significativas com outros membros.</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="vantagens__corpo">
+                        <div className="card__vantagens">
+                            <a href="#"><img className='card__vantagens_img' src={premium} alt='desconto' /></a>
+                            <h3>Pacote Premium</h3>
+                            <p><b>Vantagens:</b>
+                            <ul>
+                                <li>Orientação personalizada para questões específicas relacionadas ao câncer bucal.</li>
+                                <li>Informações em primeira mão sobre descobertas recentes na área.</li>
+                                <li>Participação VIP em eventos para construir uma rede de apoio.</li>
+                            </ul>
                             </p>
                         </div>
                     </div>
@@ -165,8 +178,16 @@ Participação VIP em eventos para construir uma rede de apoio.
 
                     <div id='row-tabela-preco' className="lp-tabela-precos">
                         <div className="preco__plano">
-                            <p className='price__titulo'>Plano Premium</p>
-                            <p className="price__preco">$29.99/mês</p>
+                            <p className='price__titulo'>Plano Essencial</p>
+                            <p className="price__preco">R$29.99/mês</p>
+                            <ul className="features__preco">
+                                <li>Todos os recursos</li>
+                                <li>Suporte 24/7</li>
+                            </ul>
+                        </div>
+                        <div className="preco__plano">
+                            <p className='price__titulo'>Plano Avançado</p>
+                            <p className="price__preco">R$59.99/mês</p>
                             <ul className="features__preco">
                                 <li>Todos os recursos</li>
                                 <li>Suporte 24/7</li>
@@ -174,15 +195,7 @@ Participação VIP em eventos para construir uma rede de apoio.
                         </div>
                         <div className="preco__plano">
                             <p className='price__titulo'>Plano Premium</p>
-                            <p className="price__preco">$29.99/mês</p>
-                            <ul className="features__preco">
-                                <li>Todos os recursos</li>
-                                <li>Suporte 24/7</li>
-                            </ul>
-                        </div>
-                        <div className="preco__plano">
-                            <p className='price__titulo'>Plano Premium</p>
-                            <p className="price__preco">$29.99/mês</p>
+                            <p className="price__preco">R$99.99/mês</p>
                             <ul className="features__preco">
                                 <li>Todos os recursos</li>
                                 <li>Suporte 24/7</li>

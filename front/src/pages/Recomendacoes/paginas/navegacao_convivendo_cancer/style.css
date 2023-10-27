@@ -25,9 +25,21 @@
 .banner-bioetica a{
     position: absolute;
     top: 40px;
-    left: 50px;
+    left: 75px;
     text-decoration: none;
     color: white;
+}
+
+.banner-bioetica a:hover{
+    border-radius: 10px;
+    text-decoration-line: underline;
+}
+
+.seta{
+    position: absolute;
+    transform: scale(0.07) translateY(-3450px);
+    left: -400px;
+    color: aliceblue;
 }
 
 .main-content{
