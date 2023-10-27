@@ -10,8 +10,7 @@ export default function Quiz() {
     <>
       <Navbar />
       <ModalOptions />
-      <QuizInicio/>
-   
+      <QuizInicio/>   
     </>
   );
 }

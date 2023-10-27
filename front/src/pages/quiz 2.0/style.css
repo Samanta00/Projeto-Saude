@@ -1,5 +1,5 @@
 .background{
-  background: url(../../../../assets/img/Background__Quiz.png);
+  background: url(../../assets/img/Background__Quiz.png);
 }
 
 .opcoesBox {
@@ -107,13 +107,13 @@
 .botao {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   width: 100%;
+  align-items: center;
   font-size: 16px;
   color: #FFF;
-  background-color: transparent;
+  background-color: #224fc2;
   border-radius: 8px;
-  padding: 8px;
+  padding: 15px;
   border: none;
   cursor: pointer;
   margin: 0 12px;
@@ -125,4 +125,8 @@
 
 .botao:hover {
   background-color: #0b95bd;
+}
+
+.botao__reiniciar {
+    width: 250px;
 }

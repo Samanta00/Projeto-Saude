@@ -1,5 +1,5 @@
 .background {
-    background-image: url(C:\Users\GUERRAGGA\Documents\GitHub\Projeto-Saude\front\src\assets\img\Background__Quiz.png);
+    background-image: url(../../../../assets/img/Background__Quiz.png);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -13,8 +13,9 @@
     display: block;
 }
 .divButtonQuiz{
-    
+
 }
+
 .buttonQuiz{
     width: 100%;
     background-color: #0DB3E3;
@@ -27,4 +28,5 @@
 
 .buttonQuiz a{
     color: white;
+    text-decoration: none;
 }

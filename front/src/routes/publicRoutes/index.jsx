@@ -8,13 +8,14 @@ import Quiz from '../../pages/Quiz';
 import Agenda from '../../pages/Agenda';
 import Recomendacoes from '../../pages/Recomendacoes/index.jsx';
 import Resultados from '../../pages/Resultados';
-import PerguntasQuiz from '../../pages/Quiz/paginas/PerguntasQuiz';
+import PerguntasQuiz from '../../pages/Quiz/index';
+import QuizTeste from '../../pages/quiz 2.0/quizteste';
 
 export const PublicRoutes = () => (
   <React.Fragment>
+    <Route path='/' element={<QuizTeste/>}/>
      <Route path='/start' element={<Start/>}/>
     <Route path='/home' element={<PagesHome/>}/>
-    <Route path='/' element={<Recomendacoes/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/agendamento' element={<Agenda/>}/>
     <Route path='/resultados' element={<Resultados/>}/>
