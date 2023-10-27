@@ -1,17 +1,33 @@
 import React from 'react';
+import './style.css';
+import convivendoBioetica from './assets/convivendo-com-cancer_exercicios.jpg';
+import seta from './assets/arrow-left-solid.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
 
 const Exercicios = () => {
     return (
         <div>
-            <section className='banner-exercicio'>
+            <section className='banner-exercicio banner-bioetica'>
+            <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__banner-exercicio'>Convivendo com o Cancer</h2>
                 <h1 className='titulo__banner-exercicio'>Exercícios Físicos</h1>
                 <p className='paragrafo__banner-exercicio'>A prática de exercícios físicos regulares durante o tratamento de câncer pode melhorar a qualidade de vida do paciente, aliviando alguns dos efeitos adversos dos medicamentos, além de fortalecer a imunidade e aumentar a disposição. Saiba mais</p>
-                <img src="" alt="" />
+                <div className='exercicio'><img src={convivendoBioetica} alt="" /></div>
+                </div>
             </section>
 
             <section className='estrutura-exercicio-fisico'>
+
+                <div className="just__space"></div>
+
+                <div className='conteudo'>
+
                 <p className='paragrafo__estrutura-exercicio-fisico'>A fadiga acomete até 70% dos pacientes de câncer e pode ser decorrente tanto da doença quanto dos tratamentos (cirurgia, quimioterapia, radioterapia e toda a dinâmica que os envolve e mexe com a rotina das pessoas). Por causa disso, durante muito tempo acreditou-se que o melhor a fazer fosse permanecer em repouso o máximo possível e diminuir a prática de exercícios físicos ao longo do tratamento contra a doença.</p>
 
                 <p className='paragrafo__estrutura-exercicio-fisico'>Depois de estudos e pesquisas que sistematicamente provaram o contrário, hoje a recomendação é que os pacientes, em sua ampla maioria, mantenham o corpo em movimento enquanto combatem o câncer – algumas exceções serão observadas adiante. Vale destacar, ainda, que repouso em excesso pode levar à perda de funções corporais, à fraqueza muscular e à redução da mobilidade.</p>
@@ -176,6 +192,24 @@ const Exercicios = () => {
                 <p className='paragrafo__estrutura-exercicio-fisico'>Acrescentar pequenas atividades físicas ao dia a dia já é suficiente para auxiliar a saúde do paciente oncológico</p>
                 <p className='paragrafo__estrutura-exercicio-fisico'><strong> VERDADE.</strong> Não precisa haver uma atividade atlética e sistemática para que o organismo sinta benefícios durante o tratamento contra o câncer. Movimentar o corpo diariamente, por mínimo que seja – pequenos afazeres domésticos ou mudanças na locomoção, por exemplo – já promove uma evolução na qualidade de vida.</p>
                 <p className='paragrafo__estrutura-exercicio-fisico'></p>
+
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
 
             </section>
         </div>

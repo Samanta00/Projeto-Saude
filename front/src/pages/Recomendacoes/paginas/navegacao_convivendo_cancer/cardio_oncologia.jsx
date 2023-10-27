@@ -1,9 +1,11 @@
 import React from 'react';
+import seta from './assets/arrow-left-solid.svg'
 
 const CardioOncologia = () => {
     return (
         <div>
             <section className='banner-cardio-oncologia'>
+                <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
                 <h2 className='subtitulo__cardio-oncologia'>Convivendo com o câncer</h2>
                 <h1 className='titulo__cardio-oncologia'>Cardio-oncologia</h1>
