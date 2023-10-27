@@ -17,7 +17,7 @@
   height: 100vh;
   width: 100%;
   background-color: #f2f2f2;
-  background-image: url(C:\Users\GUERRAGGA\Documents\GitHub\Projeto-Saude\front\src\assets\img\background_login.png);
+  background-image: url(../../assets/img/background_login.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

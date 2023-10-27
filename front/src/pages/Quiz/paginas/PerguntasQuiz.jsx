@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Perguntas } from "../../../data/perguntas";
-import "./styles/pergunta-Styles.css"
-
+import "./styles/pergunta-Styles.css";
 import Container from "../Container";
-import img from "../img.png"
+import img from "../img.png";
 import Navbar from "../../../component/NavBar";
 import ModalOptions from "../../../component/NavBar/ModalOptions";
-
 
 export default function PerguntasQuiz() {
   const questions = Perguntas ?? [];
@@ -14,72 +12,58 @@ export default function PerguntasQuiz() {
   const [showPoint, setShowPoint] = useState(false);
   const [points, setPoints] = useState(0);
 
-  function proximaPergunta(correta) {
-    const nextQuestion = perguntaAtual + 1;
-
-    if (correta) {
-      setPoints(points + 50);
+  const handleResposta = (alternativa) => {
+    // Verificar se a alternativa está correta e adicionar pontos
+    if (questions[perguntaAtual].opcoesResposta[alternativa].correta) {
+      const pontosDaResposta =
+        questions[perguntaAtual].opcoesResposta[alternativa].pontos ||
+        defaultPontosPorAlternativa(alternativa);
+      setPoints(points + pontosDaResposta);
     }
 
-    if (nextQuestion < questions.length) {
-      setPerguntaAtual(nextQuestion);
+    // Avançar para a próxima pergunta
+    if (perguntaAtual + 1 < questions.length) {
+      setPerguntaAtual(perguntaAtual + 1);
     } else {
+      // Exibir os pontos finais quando todas as perguntas forem respondidas
       setShowPoint(true);
     }
-  }
+  };
 
-  function GoToBack() {
-    setShowPoint(false);
-    setPoints(0);
-    setPerguntaAtual(0)
-  }
+  const defaultPontosPorAlternativa = (alternativa) => {
+    // Definir pontos padrão caso não seja especificado nas opções
+    const pontosPadrao = {
+      A: 2,
+      B: 4,
+      C: 6,
+      D: 8,
+    };
+    const letraAlternativa = questions[perguntaAtual].opcoesResposta[alternativa]
+      .alternativa;
+    return pontosPadrao[letraAlternativa];
+  };
 
   return (
-    <>
-      <Navbar />
-      <ModalOptions />
+    <Container>
       {showPoint ? (
-        <div className="pointsShow">
-          <p>Seu resultado foi <span className="point">{`%${points}`}</span></p>
-          <button 
-            className="botao"
-            onClick={() => GoToBack()}
-          >Resetar</button>
+        // Mostrar os pontos finais
+        <div>
+          <h2>Pontuação Final: {points} pontos</h2>
+          {/* Aqui você pode adicionar qualquer coisa que queira exibir após o término do quiz */}
         </div>
       ) : (
-        <div className="background">
-        <Container>
-          <div className="infoPerguntas">
-            <div className="contagemPerguntas">
-              <span>
-                Pergunta <span className="contagem">{perguntaAtual + 1}</span> de <span className="contagem">{questions.length}</span>
-              </span>
-            </div>
-            <div className="flex-direction">
-              <img src={img} alt="" />
-              <div className="pergunta">{questions[perguntaAtual].pergunta}</div>
-            </div>
+        // Mostrar a pergunta atual e as opções de resposta
+        <div>
+          <h2>{questions[perguntaAtual].pergunta}</h2>
+          <div>
+            {questions[perguntaAtual].opcoesResposta.map((opcao, index) => (
+              <button key={index} onClick={() => handleResposta(index)}>
+                {opcao.alternativa} {opcao.resposta}
+              </button>
+            ))}
           </div>
-
-          <div className="opcoesBox">
-            <div className="resposta">
-              {questions[perguntaAtual].opcoesResposta.map((opcoesResposta) => (
-                <div className="grupoResposta"
-                  onClick={() => proximaPergunta(opcoesResposta.correta)}
-                >
-                  <div className="ordem">{opcoesResposta.alternativa}</div>
-                  <button
-                    className="botao alternativa"
-                  >
-                    {opcoesResposta.resposta}
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-        </Container>
         </div>
       )}
-    </>
+    </Container>
   );
 }
