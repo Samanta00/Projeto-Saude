@@ -24,7 +24,7 @@ const ConteudoStart = () => {
             <section className='lp-inicio lp-sc-primario'>
                 <div className='lp-sc-primario__conteudo'>
                     <h1 className='lp-sc-primario__titulo'>
-                         BucalGuardian: Plataforma de Gerenciamento e Cuidado do Câncer Bucal
+                         Happy Health: Plataforma de Gerenciamento e Cuidado do Câncer Bucal
                     </h1>
                     <p className='lp-sc-primario__texto'>
                         Pelo menos 97% eficaz, até 30x mais rápido em resultados Médicos
@@ -134,7 +134,7 @@ const ConteudoStart = () => {
 
             <section className='lp-corpo lp-sc-ajuda '>
             <h2 className='lp-titulo-secundario'>
-                    Para obter mais ajuda
+                    Público alvo
                 </h2>
                 <div className='lp-corpo_centro'>
                     <div className='lp-card-ajuda'>
@@ -172,7 +172,7 @@ const ConteudoStart = () => {
 
             <section className='lp-corpo lp-sc-precos'>
             <h2 className='lp-titulo-terciario'>
-                    Nossos Preços
+                    Preços
                 </h2>
                 <div className='lp-tabela'>
 

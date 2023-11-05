@@ -1,4 +1,6 @@
-
+*{
+  scroll-behavior: smooth;
+}
   
   .subcomponents-container {
   display: grid;
@@ -13,6 +15,10 @@
   padding: 20px; /* Espaçamento interno */
   border-radius: 8px; /* Borda arredondada */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.subcomponent img{
+  height: 50px;
 }
 
 .subcomponent h2 {
@@ -90,8 +96,8 @@
 
 /* Adicione estilos para centralizar o formulário */
 .centralized-form {
-  background-color: #f4f4f4;
-  border: 1px solid #ddd;
+  background-color: #fff;
+  border: 1px solid #00eb7e;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -100,6 +106,7 @@
   width: 100%; /* Adapte a largura conforme necessário */
   margin: 0 auto; /* Centralize horizontalmente */
   margin-top: 20px; /* Espaçamento superior */
+  margin-bottom: 60px;
 }
 
 .centralized-form form {
@@ -109,7 +116,11 @@
 }
 
 .centralized-form h2 {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.centralized-form button {
+  margin-top: 20px;
 }
 
 /* Estilos para telas menores */
@@ -123,6 +134,8 @@
   background-color: #f5f5f5;
   padding: 20px;
   text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 h1 {
@@ -133,9 +146,14 @@ h1 {
 
 .filtro {
   display: flex;
+  margin-left: 32%;
+  margin-top: 10px;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   background-color: #fff;
+  width: 500px;
+  height: 300px;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -183,9 +201,11 @@ button:hover {
   border-radius: 8px;
   background-color: #00eb7e;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 80%;
   max-width: 800px;
   margin: 0 auto;
+  align-items: center;
+  text-align: center;
 }
 
 /* Estilização para o título "Resultados da Consulta" */
@@ -197,6 +217,7 @@ button:hover {
 
 /* Estilização para cada item de resultado */
 .resultados li {
+  list-style: none;
   margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ddd;
@@ -234,13 +255,14 @@ button:hover {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 8px;
-  background-color: #00eb7e;
+  background-color: #6fef97;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   align-items: center;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 /* Estilização para o título "Agenda de Medicação" */

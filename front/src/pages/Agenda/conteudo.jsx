@@ -10,7 +10,9 @@ import { setSeconds, setMinutes, setHours } from 'date-fns';
 import { startOfDay, startOfWeek, startOfMonth } from 'date-fns';
 import { toDate, parse, parseISO } from 'date-fns';
 import { set } from 'date-fns';
-
+import medicacao from '../../assets/img/capsule.svg';
+import consulta from '../../assets/img/doctor.svg';
+import medico from '../../assets/img/snake.svg';
 
 
 const AgendaMedicacao = () => {
@@ -139,7 +141,7 @@ Descrição: ${medicacao.descricao}`;
       <div className="component-wrapper">
         <div className="subcomponents-container">
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={medicacao} className="servicos" alt="" />
             <h2>Agendar Medicação</h2>
             <h5>Quiz interativo com perguntas sobre hábitos que podem aumentar o risco de câncer bucal.</h5>
             <p>Como Funciona?</p>
@@ -148,7 +150,7 @@ Descrição: ${medicacao.descricao}`;
           </div>
 
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={consulta} className="servicos" alt="" />
             <h2>Agendar Consulta</h2>
             <h5>Permitir que os usuários agendem consultas com profissionais de saúde especializados em câncer bucal.</h5>
             <p>Como Funciona?</p>
@@ -157,7 +159,7 @@ Descrição: ${medicacao.descricao}`;
           </div>
 
           <div className="subcomponent">
-            <img src={servicos} className="servicos" alt="" />
+            <img src={medico} className="servicos" alt="" />
             <h2>Resultados Médicos</h2>
             <h5>Possibilitar o compartilhamento seguro de resultados médicos entre pacientes e profissionais de saúde.</h5>
             <p>Como Funciona?</p>

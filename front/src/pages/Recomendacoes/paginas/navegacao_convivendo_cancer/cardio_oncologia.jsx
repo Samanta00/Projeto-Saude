@@ -1,20 +1,32 @@
 import React from 'react';
-import seta from './assets/arrow-left-solid.svg'
+import './style.css';
+import convivendoBioetica from './assets/convivendo-com-cancer_cardio-onco.jpg';
+import seta from './assets/arrow-left-solid.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
 
 const CardioOncologia = () => {
     return (
         <div>
-            <section className='banner-cardio-oncologia'>
+            <section className='banner-cardio-oncologia banner-bioetica'>
                 <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__cardio-oncologia'>Convivendo com o câncer</h2>
                 <h1 className='titulo__cardio-oncologia'>Cardio-oncologia</h1>
                 <p className='paragrafo__cardio-oncologia' >A cardio-oncologia trata do coração especialmente durante o tratamento do câncer, já que as toxinas dos medicamentos que combatem os tumores podem afetar o coração e aumentar o risco de morte e também de sequelas nos pacientes. Saiba mais</p>
-                <img src="" alt="" />
+                </div>
+                <img src={convivendoBioetica} alt="" />
             </section>
 
-            <section className='estrutura__cardio-oncologia'>
+            <section className='conteudo__cardio-oncologia'>
 
+                <div className="just__space"></div>
+
+            <div className="conteudo">
                 <p className='paragrafo__cardio-oncologia'>Em decorrência do aumento da incidência do câncer e da maior sobrevida dos pacientes, a prevenção e o tratamento das doenças cardiovasculares nessa população vêm ganhando destaque. A cardiotoxicidade é uma das complicações mais significativas do tratamento do câncer, responsável por considerável morbimortalidade, ou seja, não só aumentando o risco de morte mas também de sequelas importantes para o paciente.</p>
 
                 <p className='paragrafo__cardio-oncologia'>Atualmente, são essenciais para o cuidado adequado do paciente com câncer a identificação precoce do risco cardiovascular, a implementação de estratégias para redução de risco, o diagnóstico correto do problema cardiovascular e a instituição da terapêutica eficaz. Esse conjunto de medidas visa reduzir o risco de mortalidade e melhorar a qualidade de vida do paciente, sem interferir, se possível, no tratamento específico do câncer.</p>
@@ -81,6 +93,25 @@ const CardioOncologia = () => {
                 <p className='paragrafo__cardio-oncologia'>As orientações sobre os riscos de agentes quimioterápicos causarem problemas no coração devem ser passadas para o paciente inicialmente por seu oncologista. A avaliação e, se for o caso, o inicio de esquemas de prevenção de problemas cardíacos potencializados pelo tratamento deve ser feita por um cardio-oncologista.</p>
 
                 <p className='paragrafo__cardio-oncologia'>Hoje em dia, há residências específicas em cardio-oncologia, que são cardiologistas de formação mas especialistas em pacientes oncológicos. Grandes centros especializados no tratamento oncológico possuem estes profissionais na equipe que acompanha o paciente.</p>
+                
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+                
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+
+                    </div>
 
             </section>
 

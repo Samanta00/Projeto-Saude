@@ -73,7 +73,7 @@ const UserLogin = () => {
               />
             </div>
             {error && <div className="user-login__error">{error}</div>}
-            <p>Não tem uma conta? <Link to="/create">Cadastre-se aqui</Link></p>
+            <p>Não tem uma conta? <Link to="/cadastro">Cadastre-se aqui</Link></p>
             <input
               type={"submit"}
               value={"enviar"}

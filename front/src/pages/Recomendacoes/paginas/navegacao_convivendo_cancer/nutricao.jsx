@@ -1,18 +1,33 @@
 import React from 'react';
+import './style.css';
+import convivendoBioetica from './assets/convivendo-com-cancer_nutricao.jpg';
+import seta from './assets/arrow-left-solid.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
+
 
 const Nutricao = () => {
     return (
         <div>
-            <section className='banner-nutricao'>
+            <section className='banner-nutricao banner-bioetica'>
+            <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__nutricao'>Convivendo com o câncer</h2>
                 <h1 className='titulo__nutricao'>Nutrição</h1>
                 <p className='paragrafo__nutricao' >O controle adequado da alimentação durante o tratamento do câncer é fundamental para manter o balanço nutricional do organismo, já que os efeitos colaterais de alguns medicamentos podem atrapalhar a aceitação e digestão de alimentos. Saiba mais</p>
-                <img src="" alt="" />
+                </div>
+                <img src={convivendoBioetica} alt="" />
             </section>
 
-            <section className='estrutura-nutricao'>
+            <section className='conteudo-nutricao'>
 
+            <div className="just__space"></div>
+
+            <div className="conteudo">
                 <p className='paragrafo__nutricao'>Ao longo das décadas, estudos realizados em todas as partes do planeta indicam que a alimentação tem um papel importante no desenvolvimento, na propagação e também na prevenção do câncer. Entre as mortes por câncer causadas por fatores ambientais, a dieta contribui com aproximadamente 35%. Uma dieta ajustada, equilibrada e adequada poderia prevenir de três a quatro milhões de novos casos de câncer por ano.</p>
 
                 <p className='paragrafo__nutricao'>Tão importante quanto a adoção de uma alimentação com o objetivo de prevenir o câncer ou a volta da doença é a preocupação com a nutrição durante o tratamento do câncer. Os efeitos colaterais de tratamentos como a quimioterapia atrapalham a aceitação de uma série de alimentos², e a resposta para a manutenção do balanço nutricional do organismo do paciente está na própria alimentação: com o que se coloca no prato e no copo, é possível amenizar tais efeitos adversos e garantir a ingestão do que seja necessário para manter o organismo forte para atravessar a luta contra o câncer.</p>
@@ -129,6 +144,25 @@ const Nutricao = () => {
                 <strong>O consumo de castanhas pode prevenir o surgimento de pólipos no intestino</strong>
 
                 <p className='paragrafo__nutricao'><strong>VERDADE.</strong>Estudos indicam que o consumo de uma porção de castanhas, tais como castanha-do-pará, nozes e amêndoas, três vezes por semana, reduz a ocorrência de pólipos no intestino grosso.</p>
+                
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+                
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+
 
             </section>
 

@@ -12,18 +12,15 @@ import PerguntasQuiz from '../../pages/Quiz/index';
 
 export const PublicRoutes = () => (
   <React.Fragment>
-    <Route path='/recomendacoes' element={<Recomendacoes/>}/>
-    <Route path='/' element={<Start/>}/>
-    <Route path='/quiz' element={<Quiz/>}/>
-    <Route path='/start' element={<Start/>}/>
     <Route path='/home' element={<PagesHome/>}/>
+    <Route path='/' element={<Recomendacoes/>}/>
+    <Route path='/start' element={<Start/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
-    <Route path='/agendamento' element={<Agenda/>}/>
+    <Route path='/agenda' element={<Agenda/>}/>
     <Route path='/resultados' element={<Resultados/>}/>
-    <Route path="/login" element={<PagesLogin />} />
+    <Route path="/login" element={<PagesLogin />}/>
     <Route path='/cadastro' element={<Cadastro/>}/>
     <Route path='/perguntas' element={<PerguntasQuiz/>}/>
-    <Route path='/Recomendacoes' element={<Recomendacoes/>}/>
   </React.Fragment>
 )
 

@@ -18,11 +18,11 @@ const Exercicios = () => {
                 <h2 className='subtitulo__banner-exercicio'>Convivendo com o Cancer</h2>
                 <h1 className='titulo__banner-exercicio'>Exercícios Físicos</h1>
                 <p className='paragrafo__banner-exercicio'>A prática de exercícios físicos regulares durante o tratamento de câncer pode melhorar a qualidade de vida do paciente, aliviando alguns dos efeitos adversos dos medicamentos, além de fortalecer a imunidade e aumentar a disposição. Saiba mais</p>
-                <div className='exercicio'><img src={convivendoBioetica} alt="" /></div>
                 </div>
+               <img src={convivendoBioetica} alt="" />
             </section>
 
-            <section className='estrutura-exercicio-fisico'>
+            <section className='conteudo-exercicio-fisico'>
 
                 <div className="just__space"></div>
 

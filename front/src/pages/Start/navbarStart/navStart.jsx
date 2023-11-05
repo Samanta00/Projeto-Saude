@@ -36,7 +36,9 @@ const NavStart = () => {
                     <ul>
                         <li className="container__icone"><img className="Icone" src={logo} alt="" /></li>
                         <li><Link to="./login">Login</Link></li>
-                        <li><Link to="/quiz">Registro</Link></li>
+                        <li><Link to="/home">Logado</Link></li>
+                        <li><Link to="/cadastro">Cadastrar Empresa</Link></li>
+
                     </ul>
                 </div>
             </nav>

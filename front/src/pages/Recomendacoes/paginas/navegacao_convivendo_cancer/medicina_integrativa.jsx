@@ -1,17 +1,32 @@
 import React from 'react';
+import './style.css';
+import convivendoBioetica from './assets/convivendo-com-cancer_med-integrativa.jpg';
+import seta from './assets/arrow-left-solid.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
 
 const MedicinaIntregrada = () => {
     return (
         <div>
-            <section className='banner-medicina-integrativa'>
+            <section className='banner-medicina-integrativa banner-bioetica'>
+            <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__medicina-integrativa'>Nossos serviços</h2>
                 <h1 className='titulo__medicina-integrativa'>Medicina Integrativa</h1>
                 <p className='paragrafo__medicina-integrativa' >A medicina integrativa na oncologia é responsável pela mente, o estado de espírito e outras necessidades do paciente durante o tratamento de câncer, com o objetivo de melhorar a sua qualidade de vida. Saiba mais</p>
-                <img src="" alt="" />
+                </div>
+                <img src={convivendoBioetica} alt="" />
             </section>
 
-            <section className='estrutura-medicina-integrativa'>
+            <section className='conteudo-medicina-integrativa'>
+
+            <div className="just__space"></div>
+
+            <div className="conteudo">
                 <p className='paragrafo__medicina-integrativa'>O tratamento contra o câncer vai além do combate à doença. Paralelamente à eliminação das células cancerosas, é preciso cuidar da mente, do espírito e do restante do corpo do paciente. Além disso, familiares e amigos próximos que estejam acompanhando as boas e más notícias das consultas, as sessões de quimioterapia e de radioterapia e seus possíveis efeitos adversos e dando suporte à recuperação das cirurgias necessitam de apoio, justamente para conseguirem seguir adiante nessa jornada.</p>
 
                 <p className='paragrafo__medicina-integrativa'>É aí que entra a medicina integrativa na oncologia. Essa prática aborda de forma integral o cuidado ao paciente, por meio da proposta de inclusão de terapias complementares às tradicionais terapias utilizadas contra o câncer, como cirurgia, quimioterapia e radioterapia, entre outras. O propósito da oncologia integrativa é otimizar a qualidade de vida, atenuando os efeitos físicos e emocionais que podem envolver esse período da vida do paciente e das pessoas ao seu redor.</p>
@@ -116,6 +131,25 @@ const MedicinaIntregrada = () => {
                 <p className='paragrafo__medicina-integrativa'>O ideal é que as terapias de medicina integrativa sejam ofertadas na própria unidade clínica em que o trabalho oncológico esteja sendo realizado, mas em alguns casos pode haver encaminhamento para serviços externos referenciados.</p>
 
                 <p className='paragrafo__medicina-integrativa'>É fundamental esclarecer que nada disso é parte obrigatória do tratamento. O paciente e as pessoas ao seu redor são ouvidos e por meio do diálogo se chega a um consenso sobre as melhores estratégias complementares a serem incorporadas na linha do cuidado daquele indivíduo e de sua rede de apoio (família/amigos). O apoio técnico vem da equipe, mas o paciente é o protagonista de seu tratamento.</p>
+                
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+
+                    </div>
 
             </section>
         </div>

@@ -9,9 +9,9 @@ import quiz from "../../assets/img/QUIZ.png"
 import agendamento from "../../assets/img/Agendamento.png"
 import resultados from "../../assets/img/Resultados.png"
 import imgfaixa from "../../assets/img/imagem_faixa.png"
-import perfil_1 from "../../assets/img/samanta_perfil.png"
-import perfil_2 from "../../assets/img/guerra_perfil.png"
-import perfil_3 from "../../assets/img/morgam_perfil.png"
+import perfil_1 from "../../assets/img/doctor1.jpg"
+import perfil_2 from "../../assets/img/doctor2.jpg"
+import perfil_3 from "../../assets/img/doctor3.jpg"
 import recepcao from "../../assets/img/recepcao.png"
 import consultorio from "../../assets/img/consultorio.png"
 import profissionais from "../../assets/img/profissionais.png"
@@ -286,20 +286,20 @@ function Perguntas() {
         <div className=" component-especialista">
           <div className="subcomponent_subcomponent-especialista">
             <img src={perfil_1} className="servicos" alt="" />
-            <h2>Ceo Fundador</h2>
-            <h1>Ellen Samanta</h1>
+            <h2>Especialista em Garganta</h2>
+            <h1>Dr.Ellen Samanta</h1>
           </div>
 
           <div className="subcomponent_subcomponent-especialista">
             <img src={perfil_2} className="servicos" alt="" />
-            <h2>Design UX/UI</h2>
-            <h1>Gabriel Guerra</h1>
+            <h2>Especialista em Gengiva</h2>
+            <h1>Dr.Gabriel Guerra</h1>
           </div>
 
           <div className="subcomponent_subcomponent-especialista">
             <img src={perfil_3} className="servicos" alt="" />
-            <h2>Front-end developer</h2>
-            <h1>Anderson Alves</h1>
+            <h2>Especialista em Boca</h2>
+            <h1>Dr.Anderson Alves</h1>
           </div>
 
         </div>

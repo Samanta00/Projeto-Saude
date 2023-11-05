@@ -1,18 +1,32 @@
 import React from 'react';
+import './style.css';
+import convivendoBioetica from './assets/convivendo-com-cancer_saude-mental.jpg';
+import seta from './assets/arrow-left-solid.svg';
+import facebook from './assets/facebook-f.svg';
+import twitter from './assets/twitter.svg';
+import linkedin from './assets/linkedin-in.svg';
+import whatsapp from './assets/whatsapp.svg';
+import email from './assets/envelope-regular.svg';
 
 const SaudeMental = () => {
     return (
         <div>
-            <section className='banner-saude-mental'>
+            <section className='banner-saude-mental banner-bioetica'>
+            <img className='seta' src={seta} alt=''></img>
                 <a href="#">Convivendo com o Cancer</a>
+                <div className="main-content">
                 <h2 className='subtitulo__saude-mental'>Convivendo com o câncer</h2>
                 <h1 className='titulo__saude-mental'>Saúde Mental</h1>
                 <p className='paragrafo__saude-mental' >Depressão, ansiedade, estresse, raiva e incertezas são os problemas de saúde mental mais recorrentes em quem está com câncer. Especialistas e tratamentos podem amenizar os sintomas e melhorar a qualidade de vida. Saiba mais.</p>
-                <img src="" alt="" />
+                </div>
+                <img src={convivendoBioetica} alt="" />
             </section>
 
-            <section className='estrutura-saude-mental'>
+            <section className='conteudo_saude-mental'>
 
+                <div className="just__space"></div>
+
+                <div className="conteudo">
                 <h1 className='titulo__saude-mental'>Como a saúde mental do paciente oncológico pode ser afetada</h1>
 
                 <p className='paragrafo__saude-mental'>Quando uma pessoa recebe o diagnóstico de uma doença grave como o câncer, é natural se sentir triste, angustiada, ansiosa e ter outros sentimentos que a deixem desconfortável. A perda do mundo presumido, as dúvidas e incertezas com o futuro trazem um turbilhão de novos desafios e sensações aos pacientes e também aos familiares.</p>
@@ -344,6 +358,25 @@ const SaudeMental = () => {
                 <p className='paragrafo__saude-mental'>Existem formas saudáveis de colocar a raiva para fora, que resultam em uma mudança positiva de vida e da forma de encarar a doença e o tratamento. Com o aconselhamento de um terapeuta, o paciente de câncer pode encontrar as origens de sua raiva e os gatilhos que fazem com que ela seja acionada, evitar comportamentos e hábitos destrutivos e aprender técnicas para lidar com ela (tais como escrever um diário ou praticar uma atividade física).</p>
 
                 <p className='paragrafo__saude-mental'>O profissional também é capaz de avaliar se há o risco de a raiva progredir para um quadro de depressão ou de transtorno de ansiedade e agir preventivamente para impedir que isso aconteça.</p>
+
+                <div className="social-media">
+                    <a href="" className="facebook"><img src={facebook}></img></a>
+                    <a href="" className="twitter"><img src={twitter}></img></a>
+                    <a href="" className="linkedin"><img src={linkedin}></img></a>
+                    <a href="" className="whatsapp"><img src={whatsapp}></img></a>
+                    <a href="" className="email"><img src={email}></img></a>
+                </div>
+
+                </div>
+
+                <div className="just__space2">
+                    <div className="side__box">
+                        <h3>Convivendo com o câncer</h3>
+                        <p>Este conteúdo faz parte de uma série de artigos sobre a convivência com o câncer</p>
+                        <button>Saiba mais</button>
+                    </div>
+
+                    </div>
 
             </section>
 

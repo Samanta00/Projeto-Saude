@@ -12,7 +12,7 @@ function Conteudo() {
           </div>
          
           <div className="container__caixa-conteudo">
-            <h1 className="container__titulo">Gold teeth health</h1>
+            <h1 className="container__titulo">Happy Health</h1>
             <h2 className="container__comentario">
               Olá, Me chamo Sr Dentista, Sou responsável por realizar exames
               clínico extra-buca e intra-bucal afim de encontrar Anormalidade para

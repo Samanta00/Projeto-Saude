@@ -11,6 +11,7 @@
     background: url(../../../assets/img/banner__recomendacoes.png);
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
   }
 
   .resultados-medicos h1{
@@ -47,6 +48,7 @@
     border-radius: 4px;
     margin-bottom: 5px;
     transition: background-color 0.3s;
+    border: 1px solid rgb(60, 199, 152);
   }
   
   .contact-list li.active {
