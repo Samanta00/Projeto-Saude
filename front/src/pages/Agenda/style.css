@@ -320,3 +320,7 @@ button:hover {
 .buttonCalendario.lembrete:hover {
   background-color: #45a049;
 }
+
+.contact-list li{
+  max-width: 180px;
+}

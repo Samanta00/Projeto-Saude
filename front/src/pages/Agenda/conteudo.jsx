@@ -138,7 +138,7 @@ Descrição: ${medicacao.descricao}`;
 
   return (
     <div className="caixaAgenda">
-      <div className="component-wrapper">
+      <div className="component-wrapper2">
         <div className="subcomponents-container">
           <div className="subcomponent">
             <img src={medicacao} className="servicos" alt="" />

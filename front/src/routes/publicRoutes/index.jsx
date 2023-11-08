@@ -14,9 +14,9 @@ import Galeria from '../../pages/galeria/galeria-cancer.jsx';
 
 export const PublicRoutes = () => (
   <React.Fragment>
+    <Route path='/start' element={<Start/>}/>
     <Route path='/' element={< Agenda/>}/>
     <Route path='/home' element={<PagesHome/>}/>
-    <Route path='/start' element={<Start/>}/>
     <Route path='/quiz' element={<Quiz/>}/>
     <Route path='/agenda' element={<Agenda/>}/>
     <Route path='/recomendacoes' element={<Recomendacoes/>}/>
