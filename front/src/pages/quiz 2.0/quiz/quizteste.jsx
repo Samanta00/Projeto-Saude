@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './style.css'; // Certifique-se de que este caminho está correto e que o arquivo de estilo existe no mesmo diretório
 import Navbar from '../../../component/NavBar';
+import imageQuiz from '../../Quiz/paginas/assets/QUIZ.png';
 
 const questions = [
     {
@@ -121,6 +122,9 @@ function QuizCancer() {
         
         <div className="background">
             <div className="opcoesBox">
+            <div className="divImagemQuiz">
+            <img src={imageQuiz} width= "200px" height= "200px"  className='quizImagemteste'/>
+            </div>
                 <h1 className="infoPerguntas">
                     {quizStarted ? (
                         <p className="contagemPerguntas">

@@ -10,7 +10,8 @@
 
 
 .divImagemQuiz {
-    display: block;
+    display: flex;
+    left: -10px;
 }
 .divButtonQuiz{
 

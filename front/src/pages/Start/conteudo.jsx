@@ -3,6 +3,7 @@ import './style.css';
 import Navbar from './navbarStart/navStart';
 import SliderText from './slideshow/textSlide';
 
+import clinica from "../../assets/img/clinica.png";
 import seta from '../../assets/img/download.svg';
 import seloGarantia from '../../assets/img/selo-garantia.svg';
 import desconto from '../../assets/img/desconto.png'
@@ -214,37 +215,9 @@ const ConteudoStart = () => {
                 <p className='garantia__texto'>Se você não gosta da qualidade dos serviços prestados pelo serviço, Garantimos-lhe um reembolso sem explicação no prazo de 3 dias a partir da data da compra.</p>
             </section>
 
-            <footer className='rodape__lp'>
-                <p className='rodape__lp__texto'>Fale Conosco
-                    <ul className='rodape__lista'>
-                        <li>
-                            E-mail:
-                            contato@queirozodontologia.com.br
-                        </li>
-
-                        <li>
-                            Telefone
-                            (81) 3461.3835
-                        </li>
-                        <li>
-                            WhatsApp
-                            (81) 99677-9647
-                        </li>
-                    </ul>
-                </p>
-
-                <p className='rodape__lp__texto'>
-                    Nossa localização
-                    <ul className='rodape__lista'>
-                        <li>
-                            Edifício Pontes Corporate Center, R. Barão de Souza Leão, 425 Salas 504/505 - Boa Viagem, Recife - PE
-                        </li>
-                    </ul>
-                </p>
-
-                <button className="buy-button__preco footer-button">Teste Agora</button>
-            </footer>
+  
         </div>
+        
     );
 };
 

@@ -46,8 +46,7 @@ const Navbar = () => {
             </nav>
             {/* Menu que abre com o burger */}
             <div className={menu_class}>
-                <ul>
-                
+                <ul>                
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/quiz">Quiz</Link></li>
                     <li><Link to="/recomendacoes">Recomendações</Link></li>

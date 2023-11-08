@@ -68,7 +68,7 @@
 }
 
 .conteudo-bioetica, .conteudo-exercicio-fisico, .conteudo-medicina-integrativa, .conteudo-nutricao, .conteudo__cardio-oncologia,
-.conteudo__odontologia, .conteudo__controle-dor, .conteudo_saude-mental{
+.conteudo__odontologia, .conteudo__controle-dor, .conteudo_saude-mental {
     display: flex;
     flex-direction: row;
 }

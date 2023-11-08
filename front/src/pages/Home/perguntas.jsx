@@ -74,7 +74,7 @@ function Perguntas() {
         </div>
 
         <div className="container__perguntas-titulo">
-          <div className="elementor-heading-title">
+          <div className="elementor-heading-title-accordion">
             Quais são as vantagens desse procedimento?
           </div>
 
@@ -105,14 +105,17 @@ function Perguntas() {
 
           {activeTab === 1 && (
             <div
-              id="elementor-tab-content-1981"
-              className={`elementor-tab-content elementor-clearfix ${activeTab === 1 ? "elementor-active" : ""
-                }`}
-              data-tab="1"
-              role="tabpanel"
-              aria-labelledby="elementor-tab-title-1981"
-              style={{ display: activeTab === 1 ? "block" : "none" }}
-            >
+            id="elementor-tab-title-1982"
+            className={`elementor-tab-title ${activeTab === 1 ? "elementor-active" : ""
+              }`}
+            data-tab=""
+            role="tab"
+            aria-controls="elementor-tab-content-1982"
+            aria-expanded={activeTab === 1}
+            tabIndex="-1"
+            aria-selected={activeTab === 1}
+            onClick={(event) => handleTabClick(1, event)}
+          >
               <p className="tag-card-perguntas-color">
                 Na Plataforma do Sistema de Software existem alguns cuidados
                 especiais pensados em você, uns deles é o calendário de
@@ -126,98 +129,97 @@ function Perguntas() {
             </div>
           )}
 
-            {/* ... previous code  Acordeon... */}
-            
-          <div className="container__perguntas-titulo">
-
-            <div
-              id="elementor-tab-title-1982"
-              className={`elementor-tab-title ${activeTab === 2 ? "elementor-active" : ""
+          <div
+            id="elementor-tab-title-1981"
+            className={`elementor-tab-title ${activeTab === 2 ? "elementor-active" : ""
+              }`}
+            data-tab="2"
+            role="tab"
+            aria-controls="elementor-tab-content-1981"
+            aria-expanded={activeTab === 2}
+            tabIndex="-2"
+            aria-selected={activeTab === 2}
+            onClick={(event) => handleTabClick(2, event)}
+          >
+            <span
+              className={`elementor-accordion-icon ${activeTab === 1
+                ? "elementor-accordion-icon-opened"
+                : "elementor-accordion-icon-closed"
                 }`}
-              data-tab="2"
-              role="tab"
-              aria-controls="elementor-tab-content-1982"
-              aria-expanded={activeTab === 2}
-              tabIndex="-1"
-              aria-selected={activeTab === 2}
-              onClick={(event) => handleTabClick(2, event)}
             >
-              <span
-                className={`elementor-accordion-icon ${activeTab === 2
-                  ? "elementor-accordion-icon-opened"
-                  : "elementor-accordion-icon-closed"
-                  }`}
-              >
-                <i className="fas fa-minus"></i>
-              </span>
-              <a className="elementor-accordion-title" href="#">
+              <i className="fas fa-minus"></i>
+            </span>
+            <a className="elementor-accordion-title" href="#">
               Não sofro com A doença, Como o Sistema Poderia me Ajudar?
-              </a>
-            </div>
-            {activeTab === 2 && (
-              <div
-                id="elementor-tab-content-1982"
-                className={`elementor-tab-content elementor-clearfix ${activeTab === 2 ? "elementor-active" : ""
-                  }`}
-                data-tab="2"
-                role="tabpanel"
-                aria-labelledby="elementor-tab-title-1982"
-                style={{ display: activeTab === 2 ? "block" : "none" }}
-              >
-                <p>
+            </a>
+          </div>
+
+          {activeTab === 2 && (
+            <div
+            id="elementor-tab-title-1982"
+            className={`elementor-tab-title ${activeTab === 2 ? "elementor-active" : ""
+              }`}
+            data-tab=""
+            role="tab"
+            aria-controls="elementor-tab-content-1982"
+            aria-expanded={activeTab === 2}
+            tabIndex="-2"
+            aria-selected={activeTab === 2}
+            onClick={(event) => handleTabClick(2, event)}
+          >
+              <p className="tag-card-perguntas-color">
                   O Projeto de Software tras diversas formas educacionais e
                   objetivas para a prevenção e o conhecimento do cancer bucal,
                   desta forma uma pessoa saudavel será Ciente Sobre o assunto e
                   suas responsabilidades para uma saúde saudavel.
-                </p>
-              </div>
-            )}
-
-                {/* ... previous code  Acordeon... */}
-
-            <div className="container__perguntas-titulo">
-
-              <div
-                id="elementor-tab-title-1982"
-                className={`elementor-tab-title ${activeTab === 2 ? "elementor-active" : ""
-                  }`}
-                data-tab="2"
-                role="tab"
-                aria-controls="elementor-tab-content-1982"
-                aria-expanded={activeTab === 3}
-                tabIndex="-1"
-                aria-selected={activeTab === 3}
-                onClick={(event) => handleTabClick(3, event)}
-              >
-                <span
-                  className={`elementor-accordion-icon ${activeTab === 3
-                    ? "elementor-accordion-icon-opened"
-                    : "elementor-accordion-icon-closed"
-                    }`}
-                >
-                  <i className="fas fa-minus"></i>
-                </span>
-                <a className="elementor-accordion-title" href="#">
-                  Título do Terceiro acordeão
-                </a>
-              </div>
-              {activeTab === 3 && (
-                <div
-                  id="elementor-tab-content-1982"
-                  className={`elementor-tab-content elementor-clearfix ${activeTab === 2 ? "elementor-active" : ""
-                    }`}
-                  data-tab="3"
-                  role="tabpanel"
-                  aria-labelledby="elementor-tab-title-1982"
-                  style={{ display: activeTab === 3 ? "block" : "none" }}
-                >
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ducimus, voluptatibus nemo ad dolore vitae praesentium ipsa sapiente facere reprehenderit odit possimus accusantium maxime animi quia, error provident architecto eum!
-                  </p>
-                </div>
-              )}
+              </p>
             </div>
+          )}
+
+          <div
+            id="elementor-tab-title-1981"
+            className={`elementor-tab-title ${activeTab === 3 ? "elementor-active" : ""
+              }`}
+            data-tab="3"
+            role="tab"
+            aria-controls="elementor-tab-content-1981"
+            aria-expanded={activeTab === 3}
+            tabIndex="-3"
+            aria-selected={activeTab === 3}
+            onClick={(event) => handleTabClick(3, event)}
+          >
+            <span
+              className={`elementor-accordion-icon ${activeTab === 3
+                ? "elementor-accordion-icon-opened"
+                : "elementor-accordion-icon-closed"
+                }`}
+            >
+              <i className="fas fa-minus"></i>
+            </span>
+            <a className="elementor-accordion-title" href="#">
+              Onde posso encontrar ajuda?
+            </a>
           </div>
+
+          {activeTab === 3 && (
+            <div
+            id="elementor-tab-title-1982"
+            className={`elementor-tab-title ${activeTab === 3 ? "elementor-active" : ""
+              }`}
+            data-tab=""
+            role="tab"
+            aria-controls="elementor-tab-content-1982"
+            aria-expanded={activeTab === 3}
+            tabIndex="-3"
+            aria-selected={activeTab === 3}
+            onClick={(event) => handleTabClick(3, event)}
+          >
+              <p className="tag-card-perguntas-color">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolore amet voluptas accusantium deserunt natus dolorum, quos dicta voluptate odio perferendis hic fugit enim corporis porro, numquam beatae quasi iste?
+              </p>
+            </div>
+          )}
+
         </div>
 
       </div>
